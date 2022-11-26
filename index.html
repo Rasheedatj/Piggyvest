@@ -1,0 +1,499 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/2bfe15d79d.js" crossorigin="anonymous"></script>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;800&display=swap" rel="stylesheet">
+
+  <!-- external css file -->
+  <link href="/css/output.css" rel="stylesheet">
+</head>
+
+
+<body class="relative"> 
+    <!-- header -->
+  <header class="p-3xl flex justify-between items-center top-0 bg-white fixed w-10xl z-50 header">
+    <!-- logo -->
+    <div class="lg:w-2xl">
+       <a href="#"> <img src="./src/images/index-logo.svg" alt="logo"></a>
+    </div>
+
+    <!-- hamburger button -->
+    <div class="flex flex-col space-y-2 lg:hidden hamburger">
+        <span class="w-xl h-xl bg-veryDarkBlue rounded-xl top"></span>
+        <span class="w-xl h-xl bg-veryDarkBlue rounded-xl middle"></span>
+        <span class="w-xl h-xl bg-veryDarkBlue rounded-xl bottom"></span>
+    </div>
+
+    <nav class="hidden lg:flex lg:space-x-12 lg:items center lg:w-6xl">
+      <span class="save">
+        <a href="#" class="capitalize text-veryDarkBlue font-2xl text-xl">save</a> 
+          <!-- Hover menu -->
+            <section class="fixed w-3xl hoverMenu flex flex-wrap">
+                <div class=" capitalize w-5xl flex items-center space-x-3 p-2xl transition duration-100 cursor-pointer hover:bg-lightGray">
+                    <img src="./src/images/automated.png" alt="automated" class="w-4xl">
+                    <a href="#">piggybank</a>
+                </div>
+
+                <div class=" capitalize w-5xl flex items-center space-x-3 p-2xl cursor-pointer hover:bg-lightGray  transition duration-100">
+                    <img src="./src/images/safelock.png" alt="automated" class="w-4xl">
+                    <a href="#">safelock</a>
+                </div>
+
+                <div class=" capitalize w-5xl flex items-center space-x-3 p-2xl cursor-pointer hover:bg-lightGray  transition duration-100">
+                    <img src="./src/images/target.png" alt="automated" class="w-4xl">
+                    <a href="#">target savings</a>
+                </div>
+
+                <div class=" capitalize w-5xl flex items-center space-x-3 p-2xl cursor-pointer hover:bg-lightGray  transition duration-100">
+                    <img src="./src/images/flex.png" alt="automated" class="w-4xl">
+                    <a href="#">flex naira</a>
+                </div>
+
+            </section>
+      </span>
+       <a href="#" class="capitalize text-veryDarkBlue font-2xl text-xl">invest</a> 
+       <a href="#" class="capitalize text-veryDarkBlue font-2xl text-xl">stories</a> 
+       <a href="#" class="capitalize text-veryDarkBlue font-2xl text-xl">FAQs</a> 
+       <a href="#" class="capitalize text-veryDarkBlue font-2xl text-xl">blog</a> 
+    </nav>
+
+    <!-- buttons --> 
+    <div class=" hidden lg:flex lg:w-3xl lg:space-x-3">
+        <button class="capitalize text-xl font-2xl sign hover:text-lightBlue hover:border-lightBlue transition ease-in duration-700 cursor-pointer">sign in</button>
+        <button class="text-white bg-veryDarkBlue font-2xl text-xl register hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer">Create free account</button>
+    </div>
+  </header>
+
+
+      <!-- hamburger menu -->
+    <div class="hidden flex-col items-center space-y-6 px-2xl pt-3xl absolute bg-white menu">
+        <a href="#" class="capitalize text-veryDarkBlue font-2xl text-xl">save</a> 
+        <a href="#" class="capitalize text-veryDarkBlue font-2xl text-xl">invest</a> 
+        <a href="#" class="capitalize text-veryDarkBlue font-2xl text-xl">stories</a> 
+        <a href="#" class="capitalize text-veryDarkBlue font-2xl text-xl">FAQs</a> 
+        <a href="#" class="capitalize text-veryDarkBlue font-2xl text-xl">blog</a> 
+
+        <div class=" flex flex-col space-y-9 w-10xl btn">
+            <button class="capitalize text-xl font-2xl sign hover:text-lightBlue hover:border-lightBlue transition ease-in duration-700 cursor-pointer">sign in</button>
+            <button class="text-white bg-veryDarkBlue font-2xl text-xl register hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer">Create free account</button>
+        </div>
+    </div>
+
+<section class="px-2xl pt-2xl sm:px-8xl">
+  <!-- hero section -->
+  <section class="flex flex-col space-y-32 pt-7xl items-center md:pt-10xl sm:pt-10xl  lg:flex-row lg:space-y-0 lg:pt-11xl">
+    <div class="sm:px-7xl lg:w-5xl lg:px-0 lg:pr-7xl">
+        <h1 class="text-5xl text-veryDarkBlue font-4xl leading-5xl text-center md:text-8xl md:leading-4xl sm:text-8xl sm:leading-4xl lg:text-start lg:text-11xl lg:leading-6xl">The Better Way to Save & Invest.</h1>
+        <p class="leading-xl text-paragraphColor text-center py-xl md:text-9xl md:leading-xl sm:text-9xl lg:text-start lg:w-9xl">
+            PiggyVest helps over 4 million customers achieve their financial goals by helping them save and invest with ease.
+        </p>
+        <!-- create account button -->
+        <button class="flex text-white bg-veryDarkBlue font-2xl text-xl register hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer  mt-6 mb-9 mx-auto lg:mx-0">Create free account</button>
+
+        <!-- playstore button -->
+      <div class="flex flex-col space-y-3 md:flex-row  sm:flex-row  sm:space-y-0 lg:space-x-3">
+        <button class="font-2xl sign hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex mx-auto mb-4 sm:mb-0 lg:mx-0">
+            <img src="./src/images/apple-icon.svg" alt="apple" class="mr-3">
+            Get on i-phone
+        </button>
+
+        <!-- android button -->
+        <button class="mx-auto font-2xl sign hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex space-x-6  items-center lg:mx-0">
+            <img src="./src/images/google-icon.svg" alt="android" class="mr-3">
+            Get on Android
+        </button>
+      </div>
+    </div>
+
+    <div class="lg:w-5xl flex justify-center lg:justify-center">
+      <div class="relative headerimg">
+        <img src="./src/images/headerImg.png" alt="header image" class="w-9xl sm:w-10xl">
+        <img src="./src/images/rect.png" alt="rectangle" class="absolute img1 w-8xl sm:w-10xl">
+        <img src="./src/images/sqaure.svg" alt="rectangle" class="absolute img2">
+        <img src="./src/images/rent.png" alt="rectangle" class="absolute w-13xl sm:w-12xl img3">
+        <img src="./src/images/investify.png" alt="rectangle" class="absolute w-13xl sm:w-12xl img4">
+        <img src="./src/images/circle.svg" alt="rectangle" class="absolute img5">
+        <img src="./src/images/dot2.svg" alt="rectangle" class="absolute img6">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- security -->
+<section class="flex flex-col container mx-auto space-y-6 items-center my-24 lg:flex-row lg:space-y-0 lg:items-start lg:space-x-14">
+    <div class="w-3xl sm:w-4xl lg:w-3xl lg:flex lg:justify-end">
+        <img src="./src/images/security.png" alt="security " class="w-3xl sm:w-4xl lg:w-11xl">
+    </div>
+    <div class="lg:w-6xl">
+        <h1 class="text-3xl leading-3xl font-3xl text-center lg:text-start">Your security is our priority</h1>
+        <p class="text-paragraphColor text-center mt-6 leading-xl text-4xl lg:text-start">PiggyVest uses the highest level of Internet Security and it is secured by 256 bits SSL security encryption to ensure that your information is comepletely protected from fraud.</p>
+       <div class="text-center mt-6 lg:text-start">
+        <a href="#" class="mt-12 text-lightBlue  font-xl text-center learn relative">Learn more ></a>
+       </div>
+    </div>
+
+</section>
+
+<!-- savings varieties -->
+<section class="flex flex-col space-y-12 mb-16 sm:grid sm:col-span-3 sm:gap-10 sm:space-y-0">
+    <div class="flex flex-col space-y-6 items-center sm:col-start-1 sm:col-end-3 lg:col-start-1 lg:col-end-2 lg:items-start lg:justify-center">
+        <h1 class="text-veryDarkBlue text-3xl leading-3xl font-3xl text-center md:w-11xl sm:w-11xl lg:w-8xl lg:text-start lg:text-12xl lg:leading-7xl ">4 ways to build your savings</h1>
+        <p class="text-center text-paragraphColor leading-xl sm:w-5xl lg:text-start lg:w-8xl">Earn 5%-15% when you save with any of these PiggyVest plans.</p>
+        <button class=" text-white bg-veryDarkBlue font-2xl text-xl register hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer  mt-9 ">start saving</button>
+    </div>
+
+    <!-- automated savings -->
+    <div class="bg-grayBg rounded-4xl px-2xl py-3xl saving  md:mx-auto sm:col-start-1 sm:col-end-2 sm:w-10xl lg:col-start-2 lg:col-end-3">
+        <a href="" class="flex flex-col items-center space-y-3">
+            <div class="w-2xl mx-auto pb-2xl">
+                <img src="./src/images/automated.png" alt="piggybank">
+            </div>
+            <h1 class="text-xl text-veryDarkBlue font-3xl text-center">Automated Savings</h1>
+            <p class="text-center text-paragraphColor leading-xl sm:h-4xl sm:text-9xl">Build a dedicated savings faster on your terms manually or automatically.</p>
+
+            <div class="pt-3xl flex space-x-3 items-center arrow">
+                <img src="./src/images/arrow1.svg" alt="arrow">
+                <p class="font-4xl">Piggybank</p>
+            </div>
+        </a>
+    </div>
+    <!-- fixed saving -->
+    <div class="bg-grayBg rounded-4xl px-2xl py-3xl saving  md:mx-auto sm:col-start-2 sm:col-end-3 sm:w-10xl lg:col-start-3 lg:col-end-4">
+        <a href="" class="flex flex-col items-center space-y-3">
+            <div class="w-2xl mx-auto pb-2xl">
+                <img src="./src/images/safelock.png" alt="piggybank">
+            </div>
+            <h1 class="text-xl text-veryDarkBlue font-3xl text-center">Fixed Savings</h1>
+            <p class="text-center text-paragraphColor leading-xl sm:h-4xl sm:text-9xl">Lock money away for a fixed duration with no access to it until maturity. It's like having a fixed deposit</p>
+
+            <div class="pt-3xl flex space-x-3 items-center arrow">
+                <img src="./src/images/safeArrow.svg" alt="arrow">
+                <p class="font-4xl">Safelock</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- target -->
+    <div class="bg-grayBg rounded-4xl px-2xl py-3xl saving  md:mx-auto sm:w-10xl lg:col-start-2 lg:col-end-3">
+        <a href="" class="flex flex-col items-center space-y-3">
+            <div class="w-2xl mx-auto pb-2xl">
+                <img src="./src/images/target.png" alt="piggybank">
+            </div>
+            <h1 class="text-xl text-veryDarkBlue font-3xl text-center">Goal Oriented Savings</h1>
+            <p class="text-center text-paragraphColor leading-xl sm:text-9xl">Reach all your savings goal faster. 
+                Save towards multiple goals on your own or with a group
+            </p>
+
+            <div class="pt-3xl flex space-x-3 items-center arrow">
+                <img src="./src/images/target.svg" alt="arrow">
+                <p class="font-4xl">Target savings</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- flexible savvings -->
+    <div class="bg-grayBg rounded-4xl px-2xl py-3xl saving md:mx-auto sm:w-10xl">
+        <a href="" class="flex flex-col items-center space-y-3">
+            <div class="w-2xl mx-auto pb-2xl">
+                <img src="./src/images/flex.png" alt="piggybank">
+            </div>
+            <h1 class="text-xl text-veryDarkBlue font-3xl text-center">Flexible Savings</h1>
+            <p class="text-center text-paragraphColor leading-xl sm:text-9xl">Save,transfer, withdraw, manage and organise your money for free at any time</p>
+
+            <div class="pt-3xl flex space-x-3 items-center arrow">
+                <img src="./src/images/flex.svg" alt="arrow">
+                <p class="font-4xl">Flex Naira</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- invest -->
+<section class="flex flex-col space-y-12 my-16 items-center lg:flex-row lg:items-start lg:space-x-24">
+    <div class="investImg relative w-10xl self-center flex justify-center lg:w-6xl lg:justify-end">
+        <img src="./src/images/invest.png" alt="invest" class="w-8xl  invest">
+    </div>
+
+    <div class="flex flex-col space-y-9 items-center lg:w-8xl lg:items-start">
+        <button class="bg-lightPurple text-purple text-xl font-2xl rounded-4xl self-center px-xl py-5xl lg:self-start">up to 25% returns</button>
+
+        <h1 class="text-veryDarkBlue text-3xl leading-3xl font-3xl text-center sm:text-10xl sm:leading-4xl sm:w-8xl lg:text-start lg:text-13xl lg:leading-8xl">Access investment opportunities</h1>
+
+        <p class="text-center text-paragraphColor leading-xl sm:w-6xl lg:text-start">Invest securely and confidently on the go. Grow your money confidently by investing in pre-vetted investment opportunities.</p>
+
+        <a href="#" class="mt-12 text-purple  font-xl text-center relative learn2">Learn more about investment &nbsp;></a>
+
+
+    </div>
+</section>
+</section>
+
+<!-- saver of the month -->
+<section class="flex flex-col mt-12 lg:flex-row">
+    <div class="bg-lightBlue flex flex-col py-3xl px-xl items-center md:py-6xl sm:py-6xl lg:h-5xl lg:px-6xl ">
+        <h1 class="text-6xl text-white font-3xl text-center lg:text-start  lg:text-13xl lg:w-10xl   meet">Meet the saver of the month!</h1>
+        <p class="text-center text-white leading-xl pt-xl md:w-8xl sm:px-6xl sm:py-xl lg:text-start lg:w-10xl lg:px-0 lg:pr-10xl">Every month, we shine a spotlight on one saver, asking them questions about their savings culture and how the product is specifically helping them shape how they spend and save for future responsibilities.</p>
+
+        <div class="flex space-x-3 self-center items-center pt-3xl lg:self-start">
+            <img src="./src/images/titoArrow.svg" alt="arrow">
+            <p class="capitalize text-white font-3xl">meet tito</p>
+        </div>
+    </div>
+
+  <div class="tito lg:h-5xl">
+    <!-- <img src="./src/images/tito.jpg" alt="tito"> -->
+  </div>
+</section>
+
+
+<section class="px-2xl pt-2xl">
+<!-- customer reviews -->
+<section class="flex flex-col space-y-6 mt-16 lg:flex-row lg:space-x-24 lg:px-6xl">
+    <!-- scroll reviews -->
+    <div class="swiper mySwiper lg:w-11xl lg:h-2xl">
+        <div class="swiper-wrapper  flex flex-col space-y-12">
+            <!-- review one -->
+          <div class="swiper-slide bg-lightGray p-xl">
+            <small class="flex justify-end">Thursday, 6th of October 2022 by 11:42 AM</small>
+            <div class="flex space-x-4">
+                <img src="./src/images/review1.jpeg" alt="user image" class="w-15xl h-6xl rounded-5xl">
+                <div class="">
+                    <h1>Tobenna A</h1>
+                    <p class="mt-3">Thanks to piggyvest I've saved enough money to start up a really large business</p>
+                </div>
+            </div>
+          </div>
+
+          <!-- review two -->
+          <div class="swiper-slide bg-lightGray p-xl">
+            <small class="flex justify-end">Wednesday, 5th of October 2022 by 03:08 AM</small>
+            <div class="flex space-x-4">
+                <img src="./src/images/review 2.jpeg" alt="user image" class="w-15xl h-6xl rounded-5xl">
+                <div class="">
+                    <h1>Micheal F</h1>
+                    <p class="mt-3">I just joined tho and I believe piggyVest won't disappoint me 😊❤️</p>
+                    
+                </div>
+            </div>
+          </div>
+
+          <!-- review 3 -->
+          <div class="swiper-slide bg-lightGray p-xl">
+            <small class="flex justify-end">Thursday, 27th of October 2022 by 13:03 PM</small>
+            <div class="flex space-x-4">
+                <img src="./src/images/review3.jpeg" alt="user image" class="w-15xl h-6xl rounded-5xl">
+                <div class="">
+                    <h1>Racheal O</h1>
+                    <p class="mt-3">My name is Rachael Joseph and I am here to testify that Piggyvest has helped me a lot. I had to spread the good news to my friends and tell them about the app and behold they are also using it. Thank you so much Pggyvest for saving me cause I am the type of person that spends lavishly. Thank you once again Piggyvest 💙</p>
+                    
+                </div>
+            </div>
+          </div>
+          <!-- review 4 -->
+          <div class="swiper-slide bg-lightGray p-xl">
+            <small class="flex justify-end">Monday, 24th of October 2022 by 23:27 PM</small>
+            <div class="flex space-x-4">
+                <img src="./src/images/review4.jpeg" alt="user image" class="w-15xl h-6xl rounded-5xl">
+                <div class="">
+                    <h1>Uchenda C</h1>
+                    <p class="mt-3">Whenever money got into my hands, I never knew how I squandered it so fast without even saving a little. I got to hear about Piggy vest and it's various services and right now, I am totally enjoying this journey.</p>
+                    
+                </div>
+            </div>
+          </div>
+
+          <!-- review 5 -->
+          <div class="swiper-slide bg-lightGray p-xl">
+            <small class="flex justify-end">Monday, 24th of October 2022 by 23:27 PM</small>
+            <div class="flex space-x-4">
+                <img src="./src/images/review4.jpeg" alt="user image" class="w-15xl h-6xl rounded-5xl">
+                <div class="">
+                    <h1>Uchenda C</h1>
+                    <p class="mt-3">Whenever money got into my hands, I never knew how I squandered it so fast without even saving a little. I got to hear about Piggy vest and it's various services and right now, I am totally enjoying this journey.</p>
+                    
+                </div>
+            </div>
+          </div>
+
+        <!-- review 7 -->
+        <div class="swiper-slide bg-lightGray p-xl">
+        <small class="flex justify-end">Thursday, 27th of October 2022 by 13:03 PM</small>
+        <div class="flex space-x-4">
+            <img src="./src/images/review3.jpeg" alt="user image" class="w-15xl h-6xl rounded-5xl">
+            <div class="">
+                <h1>Racheal O</h1>
+                <p class="mt-3">My name is Rachael Joseph and I am here to testify that Piggyvest has helped me a lot. I had to spread the good news to my friends and tell them about the app and behold they are also using it. Thank you so much Pggyvest for saving me cause I am the type of person that spends lavishly. Thank you once again Piggyvest 💙</p>
+                
+            </div>
+        </div>
+        </div>
+
+        <!-- review 8 -->
+        <div class="swiper-slide bg-lightGray p-xl">
+        <small class="flex justify-end">Thursday, 6th of October 2022 by 11:42 AM</small>
+        <div class="flex space-x-4">
+            <img src="./src/images/review1.jpeg" alt="user image" class="w-15xl h-6xl rounded-5xl">
+            <div class="">
+                <h1>Tobenna A</h1>
+                <p class="mt-3">Thanks to piggyvest I've saved enough money to start up a really large business</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- review 6 -->
+        <div class="swiper-slide bg-lightGray p-xl">
+        <small class="flex justify-end">Monday, 24th of October 2022 by 23:27 PM</small>
+        <div class="flex space-x-4">
+            <img src="./src/images/review4.jpeg" alt="user image" class="w-15xl h-6xl rounded-5xl">
+            <div class="">
+                <h1>Uchenda C</h1>
+                <p class="mt-3">Whenever money got into my hands, I never knew how I squandered it so fast without even saving a little. I got to hear about Piggy vest and it's various services and right now, I am totally enjoying this journey.</p>
+                
+            </div>
+        </div>
+    </div>
+        
+        </div>
+      </div>
+<!-- 4 million plus customers -->
+    <div class="flex flex-col space-y-2 items-center lg:items-start lg:w-5xl">
+        <h4 class="text-3xl text-veryDarkBlue font-3xl text-center lg:text-6xl">4 Million &plus; customers</h4>
+        <p class="text-center text-paragraphColor leading-xl pb-xl md:w-8xl sm:w-7xl lg:text-start lg:w-6xl">Since launching in 2016, over 4,000,000 people have used PiggyVest to manage their money better, avoid over-spending and be more accountable.</p>
+    <button class="text-white bg-veryDarkBlue font-2xl text-xl register hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer self-center mt-6 lg:self-start">Create free account</button>
+
+    <div class="flex items-center pt-3xl sm:space-x-3">
+        <!-- iphone button -->
+        <button class="font-2xl sign hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex mx-auto">
+            <img src="./src/images/apple-icon.svg" alt="apple" class="">
+            Get on i-phone
+        </button>
+        <!-- android button -->
+        <button class="mx-auto font-2xl sign hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex space-x-6 self-center items-center">
+            <img src="./src/images/google-icon.svg" alt="android" class="">
+            Get on Android
+        </button>
+    </div>
+    </div>
+</section>
+
+</section>
+
+<!-- featured in -->
+<div class="flex flex-col justify-between items-center space-y-12 bg-grayBg px-2xl py-6xl mt-24 sm:px-6xl lg:flex-row lg:space-y-0">
+    <h1 class="text-3xl leading-3xl text-veryDarkBlue font-3xl text-center  lg:w-11xl lg:text-6xl">As featured in</h1>
+  <div class="flex flex-col items-center space-y-9 sm:flex-row sm:space-x-10 sm:space-y-0 lg:w-8xl lg:justify-center ">
+    <div class="w-5xl sm:w-3xl lg:w-2xl">
+        <img src="./src/images/techpoint.png" alt="tech point">
+    </div>
+    <div class="w-5xl sm:w-3xl lg:w-2xl">
+        <img src="./src/images/gaurdian.png" alt="tech point">
+    </div>
+    <div class="w-5xl sm:w-3xl lg:w-2xl">
+        <img src="./src/images/crunch.png" alt="crunch">
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="flex flex-col space-y-6 mt-24 px-2xl pb-3xl lg:px-2xl">
+    <div class="grid col-span-3 gap-9  lg:flex">
+            <!-- flex item one -->
+            <div class="flex flex-col col-start-1 col-end-3 space-y-9 lg:col-start-1 lg:col-end-2 lg:w-10xl">
+                <div class="">
+                    <img src="./src/images/index-logo.svg" alt="logo" >
+                </div>
+                <div class="w-5xl sign sm:w-2xl ndpr lg:w-6xl">
+                    <img src="./src/images/footer image 2.webp" alt="security image 2">
+                </div>
+            </div>
+
+            <!-- flex item 2 -->
+            <div class="col-start-1 col end-2 flex flex-col space-y-2 lg:col-start-2 lg:col-end-3 lg:w-10xl">
+                <h4 class="text-veryDarkBlue text-7xl font-3xl pb-xl capitalize">
+                   products
+                </h4>
+                <ul class="flex flex-col space-y-3">
+                    <li class="list-none capitalize text-7xl hover:text-lightBlue"><a href="">PiggyVest</a></li>
+                    <li class="list-none capitalize text-7xl hover:text-lightBlue"><a href="">invest</a></li>
+                    <li class="list-none capitalize text-7xl hover:text-lightBlue"><a href="">safelock</a></li>
+                    <li class="list-none capitalize text-7xl hover:text-lightBlue"><a href="">target savings</a></li>
+                    <li class="list-none capitalize text-7xl hover:text-lightBlue"><a href="">flex naira</a></li>
+                </ul>
+            </div>  
+            
+            <!-- grid item 3 -->
+            <div class="col-start-2 col end-3 flex flex-col space-y-2 lg:col-start-3 lg:col-end-4  lg:w-10xl">
+                <h4 class="text-veryDarkBlue text-7xl font-3xl pb-xl capitalize">
+                    company
+                 </h4>
+                 <ul class="flex flex-col space-y-3">
+                     <li class="list-none capitalize text-7xl hover:text-lightBlue"><a href="">about</a></li>
+                     <li class="list-none capitalize text-7xl hover:text-lightBlue"><a href="">FAQs</a></li>
+                     <li class="list-none capitalize text-7xl hover:text-lightBlue"><a href="">blog</a></li>
+                 </ul>
+            </div>   
+
+
+            <!-- grid item 4-->
+            <div class=" flex flex-col space-y-2 col-start-1 col-end-3 lg:col-start-4 lg:col-end-5 lg:w-10xl">
+                <h4 class="text-veryDarkBlue text-7xl font-3xl pb-xl capitalize">
+                   legal
+                 </h4>
+                 <ul class="flex flex-col space-y-3">
+                     <li class="list-none capitalize text-7xl hover:text-lightBlue"><a href="">terms</a></li>
+                     <li class="list-none capitalize text-7xl hover:text-lightBlue"><a href="">privacy</a></li>
+                     <li class="list-none capitalize text-7xl hover:text-lightBlue"><a href="">security</a></li>
+                 </ul>
+            </div>  
+            
+            <!-- grid item 5 -->
+            <div class="flex flex-col space-y-3 col-start-1 col-end-3 lg:col-start-5 lg:col-end-6 lg:w-10xl">
+                <div class="flex space-x-3 lg:justify-end">
+                    <i class="fab fa-facebook-square fa-2x icon"></i>
+                    <i class="fab fa-twitter-square fa-2x icon"></i>
+                    <i class="fab fa-instagram-square fa-2x icon"></i>
+                </div>
+                <p class="text-veryDarkBlue text-7xl lg:text-end">Tesmot house, Abdulrahman Okene close, Victoria Island, Lagos, Nigeria.</p>
+                <p class="text-veryDarkBlue text-7xl lg:text-end">contact@piggyvest.com</p>
+                <p class="text-veryDarkBlue text-7xl lg:text-end">+234 700 933 933 933</p>
+            </div>
+    </div>
+
+    <div class="pt-3xl lg:w-6xl lg:self-center">
+        <p class="text-veryDarkBlue text-7xl text-center leading-xl">
+            Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 6 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.
+        </p>
+
+        <p class="text-lightBlue text-7xl text-center pt-2xl">
+            2016 - 2022 PiggyTech Global Limited - RC 1405222
+        </p>
+    </div>
+</footer>
+
+<!-- cookie notification -->
+
+<div class="bg-veryDarkBlue sm:w-14xl fixed  cookie">
+    <h1 class="capitalize text-white font-3xl text-14xl leading-xl">cookie notification</h1>
+
+    <div class="flex flex-col items-center  md:space-y-6  lg:flex-row lg:space-y-0 lg:space-x-12 lg:justify-between lg:items-start">
+        <p class="text-white  leading-9xl mt-3">This website uses cookies to optimize your experience and to provide us insight on how to interact with the site. All information shared with us through cookies are secure and covered by our data privacy obligations. You can access our Privacy Policy <a href="#" class="underline">here</a></p>
+
+        <div class="flex space-x-6 items-center">
+            <button class="decline text-white">decline</button>
+            <button class="accept text-veryDarkBlue hover:text-lightBlue transition duration-300">accept</button>
+        </div>
+    </div>
+</div>
+
+<!-- external javascript link -->
+  <script src="./src/app.js"></script>
+</body>
+</html>
