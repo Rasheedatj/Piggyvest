@@ -43,11 +43,11 @@ header.active {
 .sign {
   border: 1px solid #bbb;
   border-radius: 10px;
-  padding: 10px 12px;
+  padding: 13px 12px;
 }
 .register {
   border-radius: 15px;
-  padding: 12px 20px;
+  padding: 15px 20px;
 }
 .menu {
   inset: 0 0 0 0;
@@ -140,7 +140,7 @@ header.active {
   top: 10%;
 }
 .tito {
-  background-image: url(../src/images/tito.jpg);
+  background-image: url(../src/images/oyetades.jpg);
   height: 55vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -169,18 +169,18 @@ footer i:hover {
   display: flex;
 }
 
-/* .headerimg::after{
-    content: '';
-    position: absolute;
-    content: '';
-    top: -40%;
-    right:-30% ;
-    width: 300px;
-    height: 800px;
-    background-color: rgba(221, 221, 221,.3);
-    border-radius: 5px;
-    z-index: -1;
-} */
+.headerimg::after {
+  content: "";
+  position: absolute;
+  content: "";
+  top: -40%;
+  right: -30%;
+  width: 300px;
+  height: 800px;
+  background-color: rgba(221, 221, 221, 0.3);
+  border-radius: 5px;
+  z-index: -1;
+}
 
 .cookie {
   bottom: 4%;
@@ -189,6 +189,8 @@ footer i:hover {
   left: 0;
   right: 0;
   margin: auto;
+  transform: translateY(0);
+  transition: transform 800ms ease;
 }
 .decline,
 .accept {
@@ -204,8 +206,8 @@ footer i:hover {
 }
 
 .cookie.slideout {
-  animation: 500ms cookie ease;
-  display: none;
+  transform: translateY(150%);
+  /* display: none; */
 }
 
 @keyframes menu {
