@@ -13,33 +13,6 @@ header.active {
   box-shadow: 0 0 7px 0 #ced3da;
 }
 
-.img1 {
-  top: -7%;
-  right: -3%;
-  z-index: -1;
-}
-.img2 {
-  top: -7%;
-  left: -7%;
-}
-.img3 {
-  top: 25%;
-  left: -15%;
-}
-.img4 {
-  top: 70%;
-  right: -5%;
-}
-
-.img5 {
-  top: 20%;
-  right: -2%;
-}
-.img6 {
-  bottom: 10%;
-  left: -5%;
-}
-
 .sign {
   border: 1px solid #bbb;
   border-radius: 10px;
@@ -274,7 +247,7 @@ footer i:hover {
     width: 90%;
   }
 }
-
+/* 
 @media screen and (min-width: 760px) {
   .investImg::after {
     display: none;
@@ -304,7 +277,7 @@ footer i:hover {
     top: 20%;
     right: -5%;
   }
-}
+} */
 
 @media screen and (min-width: 976px) {
   .investImg::after {
