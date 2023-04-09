@@ -24,7 +24,7 @@
   <body class="relative">
     <!-- header -->
     <header
-      class="p-[2rem] flex items-center top-0 bg-white fixed w-[100%] z-50 header"
+      class="p-[2rem] flex justify-between items-center top-0 bg-white fixed w-[100%] z-50 header"
     >
       <!-- logo -->
       <div class="lg:w-[20%]">
@@ -32,7 +32,7 @@
       </div>
 
       <!-- hamburger button -->
-      <div class="flex flex-col space-y-2 lg:hidden hamburger">
+      <div class="flex flex-col space-y-2 lg:hidden hamburger justify-end">
         <span class="w-[2rem] h-[3px] bg-veryDarkBlue rounded-xl top"></span>
         <span class="w-[2rem] h-[3px] bg-veryDarkBlue rounded-xl middle"></span>
         <span class="w-[2rem] h-[3px] bg-veryDarkBlue rounded-xl bottom"></span>
@@ -117,12 +117,12 @@
       <!-- buttons -->
       <div class="hidden lg:flex lg:w-[30%] lg:space-x-3 flex-1 lg:justify-end">
         <button
-          class="capitalize text-[1.3rem] font-[500] sign hover:text-lightBlue hover:border-lightBlue transition ease-in duration-700 cursor-pointer"
+          class="capitalize text-[1.3rem] font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:text-lightBlue hover:border-lightBlue transition ease-in duration-700 cursor-pointer"
         >
           sign in
         </button>
         <button
-          class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] register hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer"
+          class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer"
         >
           Create free account
         </button>
@@ -131,7 +131,7 @@
 
     <!-- hamburger menu -->
     <div
-      class="hidden flex-col items-center space-y-6 px-[1.5rem] pt-[2rem] absolute bg-white menu"
+      class="hidden flex-col items-center space-y-6 px-[1.5rem] pt-[2rem] absolute bg-white inset-[0] menu"
     >
       <a href="#" class="capitalize text-veryDarkBlue font-[500] text-[1.3rem]"
         >save</a
@@ -151,12 +151,12 @@
 
       <div class="flex flex-col space-y-9 w-[100%] btn">
         <button
-          class="capitalize text-[1.3rem] font-[500] sign hover:text-lightBlue hover:border-lightBlue transition ease-in duration-700 cursor-pointer"
+          class="capitalize text-[1.3rem] font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:text-lightBlue hover:border-lightBlue transition ease-in duration-700 cursor-pointer"
         >
           sign in
         </button>
         <button
-          class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] register hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer"
+          class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer"
         >
           Create free account
         </button>
@@ -170,7 +170,7 @@
       >
         <div class="sm:px-[7rem] lg:w-[50%] lg:px-0 lg:pr-[7rem]">
           <h1
-            class="text-[45px] text-veryDarkBlue font-[600] rounded-[50%] text-center md:text-[55px] md:rounded-[20px] sm:text-[55px] sm:rounded-[20px] lg:text-start lg:text-[58.5px] lg:leading-[82.42px]"
+            class="text-[38px] text-veryDarkBlue font-[600] text-center md:text-[55px] sm:text-[55px] lg:text-start lg:text-[58.5px] lg:leading-[82.42px]"
           >
             The Better Way to Save & Invest.
           </h1>
@@ -182,32 +182,26 @@
           </p>
           <!-- create account button -->
           <button
-            class="flex text-white bg-veryDarkBlue font-[500] text-[1.3rem] register hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer mt-6 mb-9 mx-auto lg:mx-0"
+            class="flex text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer mt-6 mb-9 mx-auto lg:mx-0"
           >
             Create free account
           </button>
 
           <!-- playstore button -->
-          <div
-            class="flex flex-col space-y-3 md:flex-row sm:flex-row sm:space-y-0 lg:space-x-3"
-          >
+          <div class="flex flex-col md:flex-row sm:flex-row gap-[1.5rem]">
             <button
-              class="font-[500] sign hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex mx-auto mb-4 sm:mb-0 lg:mx-0"
+              class="font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex items-center gap-[5px]"
             >
-              <img src="./src/images/apple-icon.svg" alt="apple" class="mr-3" />
-              Get on i-phone
+              <img src="./src/images/apple-icon.svg" alt="apple" class="" />
+              <p>Get on i-phone</p>
             </button>
 
             <!-- android button -->
             <button
-              class="mx-auto font-[500] sign hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex space-x-6 items-center lg:mx-0"
+              class="font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex gap-[5px] items-center"
             >
-              <img
-                src="./src/images/google-icon.svg"
-                alt="android"
-                class="mr-3"
-              />
-              Get on Android
+              <img src="./src/images/google-icon.svg" alt="android" />
+              <p>Get on Android</p>
             </button>
           </div>
         </div>
@@ -222,32 +216,32 @@
             <img
               src="./src/images/rect.png"
               alt="rectangle"
-              class="absolute img1 w-[80%] top-[-7%] right-[-3%] z-[-1] sm:w-[100%]"
+              class="absolute w-[80%] right-[-2%] top-[-7%] sm:right-[-20%] z-[-1] sm:w-[100%]"
             />
             <img
               src="./src/images/sqaure.svg"
               alt="rectangle"
-              class="absolute img2 top-[-7%] left-[-7%]"
+              class="absolute top-[-7%] left-[-7%] hidden"
             />
             <img
               src="./src/images/rent.png"
               alt="rectangle"
-              class="absolute w-[230px] sm:w-[250px] img3 top-[25%] left-[-15%]"
+              class="absolute w-[230px] sm:w-[250px] top-[25%] left-[-15%]"
             />
             <img
               src="./src/images/investify.png"
               alt="rectangle"
-              class="absolute w-[230px] sm:w-[250px] img4 top-[70%] right-[-5%]"
+              class="absolute w-[230px] sm:w-[250px] img4 right-[-10%] top-[50%] sm:right-[-39%]"
             />
             <img
               src="./src/images/circle.svg"
               alt="rectangle"
-              class="absolute img5 bottom-[20%] left-[-2%]"
+              class="absolute bottom-[80%] right-[-10%]"
             />
             <img
               src="./src/images/dot2.svg"
               alt="rectangle"
-              class="absolute bottom-[100%] left-[-5%]"
+              class="absolute bottom-[10%] left-[-5%]"
             />
           </div>
         </div>
@@ -289,7 +283,7 @@
 
       <!-- savings varieties -->
       <section
-        class="flex flex-col space-y-12 mb-16 sm:grid sm:col-span-3 sm:gap-10 sm:space-y-0"
+        class="flex flex-col space-y-12 my-[5rem] sm:grid sm:col-span-3 sm:gap-10 sm:space-y-0"
       >
         <div
           class="flex flex-col space-y-6 items-center sm:col-start-1 sm:col-end-3 lg:col-start-1 lg:col-end-2 lg:items-start lg:justify-center"
@@ -305,7 +299,7 @@
             Earn 5%-15% when you save with any of these PiggyVest plans.
           </p>
           <button
-            class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] register hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer mt-9"
+            class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer mt-9"
           >
             start saving
           </button>
@@ -413,15 +407,15 @@
 
       <!-- invest -->
       <section
-        class="flex flex-col space-y-12 my-16 items-center lg:flex-row lg:items-start lg:space-x-24"
+        class="flex flex-col space-y-12 my-[5rem] items-center lg:flex-row lg:items-start lg:space-x-24"
       >
         <div
-          class="investImg relative w-[100%] self-center flex justify-center lg:w-[60%] lg:justify-end"
+          class="investImg relative w-[100%] self-center flex justify-center items-center lg:w-[60%] lg:justify-end"
         >
           <img
             src="./src/images/invest.png"
             alt="invest"
-            class="w-[80%] invest"
+            class="w-[50%] invest"
           />
         </div>
 
@@ -697,25 +691,25 @@
             accountable.
           </p>
           <button
-            class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] register hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer self-center mt-6 lg:self-start"
+            class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer self-center mt-6 lg:self-start"
           >
             Create free account
           </button>
 
-          <div class="flex items-center pt-[2rem] sm:space-x-3">
+          <div class="flex items-center pt-[2rem] gap-[15px]">
             <!-- iphone button -->
             <button
-              class="font-[500] sign hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex mx-auto"
+              class="font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex items-center gap-[5px] mx-auto"
             >
               <img src="./src/images/apple-icon.svg" alt="apple" class="" />
-              Get on i-phone
+              <p>Get on i-phone</p>
             </button>
             <!-- android button -->
             <button
-              class="mx-auto font-[500] sign hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex space-x-6 self-center items-center"
+              class="mx-auto font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex gap-[5px] self-center items-center"
             >
               <img src="./src/images/google-icon.svg" alt="android" class="" />
-              Get on Android
+              <p>Get on Android</p>
             </button>
           </div>
         </div>
@@ -758,7 +752,9 @@
           <div class="">
             <img src="./src/images/index-logo.svg" alt="logo" />
           </div>
-          <div class="w-[50%] sign sm:w-[20%] ndpr lg:w-[60%]">
+          <div
+            class="w-[50%] border-[1px] rounded-[10px] py-[13px] px-[12px] sm:w-[20%] ndpr lg:w-[60%]"
+          >
             <img
               src="./src/images/footer image 2.webp"
               alt="security image 2"
@@ -915,9 +911,9 @@
         </p>
 
         <div class="flex space-x-6 items-center">
-          <button class="decline text-white">decline</button>
+          <button class="decline text-white disappear">decline</button>
           <button
-            class="accept text-veryDarkBlue hover:text-lightBlue transition duration-300"
+            class="accept disappear text-veryDarkBlue hover:text-lightBlue transition duration-300"
           >
             accept
           </button>

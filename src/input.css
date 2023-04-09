@@ -13,15 +13,6 @@ header.active {
   box-shadow: 0 0 7px 0 #ced3da;
 }
 
-.sign {
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  padding: 13px 12px;
-}
-.register {
-  border-radius: 15px;
-  padding: 15px 20px;
-}
 .menu {
   inset: 0 0 0 0;
   animation: menu 200ms ease;
@@ -209,13 +200,7 @@ footer i:hover {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .img3,
-  .img4 {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 400px) {
   .investImg::after {
     left: 0%;
   }
@@ -228,54 +213,24 @@ footer i:hover {
     right: 0;
   }
 
-  .img3 {
-    left: -30%;
-  }
-  .img4 {
-    right: -20%;
-  }
-  .invest {
-    width: 50%;
-  }
-  .saving {
-    width: 70%;
-  }
   .ndpr {
     width: 30%;
   }
   .cookie {
     width: 90%;
   }
+
+  .headerimg::after {
+    display: none;
+  }
 }
-/* 
-@media screen and (min-width: 760px) {
+
+/* @media screen and (min-width: 760px) {
   .investImg::after {
     display: none;
   }
   .meet {
     width: 60%;
-  }
-  .img1 {
-    top: -10%;
-    right: -10%;
-    z-index: -1;
-  }
-  .img2 {
-    top: -7%;
-    left: -7%;
-  }
-  .img3 {
-    top: 25%;
-    left: -40%;
-  }
-  .img4 {
-    top: 70%;
-    right: -40%;
-  }
-
-  .img5 {
-    top: 20%;
-    right: -5%;
   }
 } */
 
