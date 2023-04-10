@@ -46,7 +46,9 @@
             >save</a
           >
           <!-- Hover menu -->
-          <section class="fixed w-[30%] hoverMenu flex flex-wrap">
+          <section
+            class="fixed w-[30%] top-[13%] left-[10%] z-[10000] border-[1px] border-[#ececec] bg-[#fff] rounded-[10px] hidden hoverMenu flex flex-wrap shadow-sm"
+          >
             <div
               class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] transition duration-100 cursor-pointer hover:bg-lightGray"
             >
@@ -131,7 +133,7 @@
 
     <!-- hamburger menu -->
     <div
-      class="hidden flex-col items-center space-y-6 px-[1.5rem] pt-[2rem] absolute bg-white inset-[0] menu"
+      class="hidden flex-col items-center space-y-6 px-[1.5rem] pt-[2rem] absolute bg-white inset-[0] menu pt-[10rem] fixed z-[2] inset-[0]"
     >
       <a href="#" class="capitalize text-veryDarkBlue font-[500] text-[1.3rem]"
         >save</a
@@ -149,7 +151,7 @@
         >blog</a
       >
 
-      <div class="flex flex-col space-y-9 w-[100%] btn">
+      <div class="flex flex-col space-y-9 w-[100%] pt-[3rem]">
         <button
           class="capitalize text-[1.3rem] font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:text-lightBlue hover:border-lightBlue transition ease-in duration-700 cursor-pointer"
         >
@@ -190,7 +192,7 @@
           <!-- playstore button -->
           <div class="flex flex-col md:flex-row sm:flex-row gap-[1.5rem]">
             <button
-              class="font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex items-center gap-[5px]"
+              class="font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex items-center gap-[5px] mx-auto"
             >
               <img src="./src/images/apple-icon.svg" alt="apple" class="" />
               <p>Get on i-phone</p>
@@ -198,7 +200,7 @@
 
             <!-- android button -->
             <button
-              class="font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex gap-[5px] items-center"
+              class="font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex gap-[5px] items-center mx-auto"
             >
               <img src="./src/images/google-icon.svg" alt="android" />
               <p>Get on Android</p>
@@ -453,7 +455,7 @@
     <!-- saver of the month -->
     <section class="flex flex-col mt-12 lg:flex-row">
       <div
-        class="bg-lightBlue flex flex-col py-[2rem] px-xl items-center md:py-[5rem] sm:py-[5rem] lg:h-[75vh] lg:px-[5rem]"
+        class="bg-lightBlue flex flex-col py-[2rem] px-xl items-center md:py-[5rem] sm:py-[5rem] lg:h-[75vh] lg:px-[5rem] w-[100%]"
       >
         <h1
           class="text-[35pxx] text-white font-[700] text-center lg:text-start lg:text-[51px] lg:w-[100%] meet"
@@ -461,7 +463,7 @@
           Meet the saver of the month!
         </h1>
         <p
-          class="text-center text-white rounded-[2px] pt-[1rem] md:w-[80%] sm:px-[5rem] sm:py-[1rem] lg:text-start lg:w-[100%] lg:px-0 lg:pr-[10rem]"
+          class="text-center text-white rounded-[2px] pt-[1rem] md:w-[80%] sm:px-[5rem] sm:py-[1rem] lg:text-start lg:w-[100%] lg:px-0 lg:pr-[5rem]"
         >
           Every month, we shine a spotlight on one saver, asking them questions
           about their savings culture and how the product is specifically
@@ -479,8 +481,12 @@
         </div>
       </div>
 
-      <div class="tito lg:h-[75vh]">
-        <!-- <img src="./src/images/tito.jpg" alt="tito"> -->
+      <div class="tito w-[100%]">
+        <img
+          src="./src/images/oyetades.jpg"
+          alt=""
+          class="object-cover lg:h-[75vh] w-[100%]"
+        />
       </div>
     </section>
 
@@ -894,7 +900,9 @@
 
     <!-- cookie notification -->
 
-    <div class="bg-veryDarkBlue sm:w-[70%] fixed cookie">
+    <div
+      class="bg-veryDarkBlue sm:w-[70%] fixed bottom-[4%] rounded-[25px] p-[2rem] left-0 right-0 m-auto cookie"
+    >
       <h1 class="capitalize text-white font-[700] text-[20px] rounded-[2px]">
         cookie notification
       </h1>
@@ -911,9 +919,11 @@
         </p>
 
         <div class="flex space-x-6 items-center">
-          <button class="decline text-white disappear">decline</button>
+          <button class="decline text-white disappear capitalize font-[700]">
+            decline
+          </button>
           <button
-            class="accept disappear text-veryDarkBlue hover:text-lightBlue transition duration-300"
+            class="accept disappear text-veryDarkBlue hover:text-lightBlue transition duration-300 capitalize font-[700] bg-[white] h-max py-[15px] px-[25px] rounded-[15px]"
           >
             accept
           </button>
