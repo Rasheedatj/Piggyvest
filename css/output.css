@@ -703,6 +703,74 @@ video {
   bottom: 20%;
 }
 
+.right-\[0\%\] {
+  right: 0%;
+}
+
+.bottom-\[2\%\] {
+  bottom: 2%;
+}
+
+.right-\[-4\%\] {
+  right: -4%;
+}
+
+.bottom-\[0\%\] {
+  bottom: 0%;
+}
+
+.bottom-\[-5\%\] {
+  bottom: -5%;
+}
+
+.bottom-\[-15\%\] {
+  bottom: -15%;
+}
+
+.right-\[-6\%\] {
+  right: -6%;
+}
+
+.right-\[-5\%\] {
+  right: -5%;
+}
+
+.top-\[7\%\] {
+  top: 7%;
+}
+
+.top-\[2\%\] {
+  top: 2%;
+}
+
+.top-\[-4\%\] {
+  top: -4%;
+}
+
+.top-\[-6\%\] {
+  top: -6%;
+}
+
+.top-\[60\%\] {
+  top: 60%;
+}
+
+.bottom-\[-12\%\] {
+  bottom: -12%;
+}
+
+.top-\[-8\%\] {
+  top: -8%;
+}
+
+.right-\[-7\%\] {
+  right: -7%;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -759,6 +827,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-\[10rem\] {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -799,6 +872,14 @@ video {
   margin-top: 5rem;
 }
 
+.mt-\[4rem\] {
+  margin-top: 4rem;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -829,12 +910,12 @@ video {
   height: 70vh;
 }
 
-.h-\[70\%\] {
-  height: 70%;
-}
-
 .h-\[2\%\] {
   height: 2%;
+}
+
+.h-\[100px\] {
+  height: 100px;
 }
 
 .w-\[100\%\] {
@@ -861,8 +942,8 @@ video {
   width: 90%;
 }
 
-.w-\[800\%\] {
-  width: 800%;
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-\[230px\] {
@@ -877,16 +958,16 @@ video {
   width: 50px;
 }
 
-.w-\[80\%\] {
-  width: 80%;
-}
-
 .w-\[350px\] {
   width: 350px;
 }
 
 .w-\[10\%\] {
   width: 10%;
+}
+
+.w-\[40\%\] {
+  width: 40%;
 }
 
 .w-\[100px\] {
@@ -905,12 +986,16 @@ video {
   width: 5%;
 }
 
-.w-\[40\%\] {
-  width: 40%;
+.w-\[40px\] {
+  width: 40px;
 }
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .cursor-pointer {
@@ -931,10 +1016,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-end {
@@ -975,10 +1056,6 @@ video {
 
 .gap-\[2rem\] {
   gap: 2rem;
-}
-
-.gap-\[3rem\] {
-  gap: 3rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1035,10 +1112,6 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.self-start {
-  align-self: flex-start;
-}
-
 .self-center {
   align-self: center;
 }
@@ -1067,12 +1140,12 @@ video {
   border-radius: 25px;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-\[5rem\] {
   border-radius: 5rem;
+}
+
+.rounded-\[50\%\] {
+  border-radius: 50%;
 }
 
 .rounded-t-\[2rem\] {
@@ -1274,6 +1347,11 @@ video {
   padding-right: 2rem;
 }
 
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .pt-\[10rem\] {
   padding-top: 10rem;
 }
@@ -1356,6 +1434,14 @@ video {
 
 .text-\[16\.5px\] {
   font-size: 16.5px;
+}
+
+.text-\[12\.8px\] {
+  font-size: 12.8px;
+}
+
+.text-\[14\.8px\] {
+  font-size: 14.8px;
 }
 
 .font-\[500\] {
@@ -1443,13 +1529,18 @@ video {
   color: rgb(15 14 14 / var(--tw-text-opacity));
 }
 
+.text-\[\#b32e58\] {
+  --tw-text-opacity: 1;
+  color: rgb(179 46 88 / var(--tw-text-opacity));
+}
+
 .text-transparent {
   color: transparent;
 }
 
-.text-\[\#b32e58\] {
+.text-\[\#888\] {
   --tw-text-opacity: 1;
-  color: rgb(179 46 88 / var(--tw-text-opacity));
+  color: rgb(136 136 136 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1630,6 +1721,39 @@ footer i:hover {
 .cookie.slideout {
   transform: translateY(150%);
   /* display: none; */
+}
+
+.love {
+  -webkit-animation: pulse 2s ease-in infinite;
+          animation: pulse 2s ease-in infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @-webkit-keyframes menu {
@@ -1819,6 +1943,14 @@ footer i:hover {
     right: 10%;
   }
 
+  .sm\:right-\[-2\%\] {
+    right: -2%;
+  }
+
+  .sm\:right-\[-5\%\] {
+    right: -5%;
+  }
+
   .sm\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -1889,6 +2021,22 @@ footer i:hover {
 
   .sm\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .sm\:w-\[10\%\] {
+    width: 10%;
+  }
+
+  .sm\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .sm\:w-\[95\%\] {
+    width: 95%;
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
