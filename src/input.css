@@ -172,6 +172,12 @@ footer i:hover {
   .headerimg::after {
     display: none;
   }
+
+  .investImg::after {
+    background-size: 70%;
+
+    left: 0%;
+  }
 }
 
 @media screen and (min-width: 400px) {
