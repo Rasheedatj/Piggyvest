@@ -683,14 +683,6 @@ video {
   top: 30%;
 }
 
-.top-\[10\%\] {
-  top: 10%;
-}
-
-.bottom-\[20\%\] {
-  bottom: 20%;
-}
-
 .top-\[20\%\] {
   top: 20%;
 }
@@ -701,6 +693,14 @@ video {
 
 .bottom-\[0\] {
   bottom: 0;
+}
+
+.top-\[10\%\] {
+  top: 10%;
+}
+
+.bottom-\[20\%\] {
+  bottom: 20%;
 }
 
 .z-50 {
@@ -825,24 +825,16 @@ video {
   height: max-content;
 }
 
-.h-\[2\%\] {
-  height: 2%;
-}
-
-.h-\[60vh\] {
-  height: 60vh;
-}
-
-.h-\[90vh\] {
-  height: 90vh;
-}
-
-.h-\[65vh\] {
-  height: 65vh;
-}
-
 .h-\[70vh\] {
   height: 70vh;
+}
+
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.h-\[2\%\] {
+  height: 2%;
 }
 
 .w-\[100\%\] {
@@ -889,16 +881,16 @@ video {
   width: 80%;
 }
 
-.w-\[100px\] {
-  width: 100px;
-}
-
 .w-\[350px\] {
   width: 350px;
 }
 
 .w-\[10\%\] {
   width: 10%;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-\[2\%\] {
@@ -911,6 +903,10 @@ video {
 
 .w-\[5\%\] {
   width: 5%;
+}
+
+.w-\[40\%\] {
+  width: 40%;
 }
 
 .flex-1 {
@@ -935,6 +931,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-end {
@@ -975,6 +975,10 @@ video {
 
 .gap-\[2rem\] {
   gap: 2rem;
+}
+
+.gap-\[3rem\] {
+  gap: 3rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1031,6 +1035,10 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.self-start {
+  align-self: flex-start;
+}
+
 .self-center {
   align-self: center;
 }
@@ -1057,6 +1065,14 @@ video {
 
 .rounded-\[25px\] {
   border-radius: 25px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-\[5rem\] {
+  border-radius: 5rem;
 }
 
 .rounded-t-\[2rem\] {
@@ -1135,6 +1151,15 @@ video {
 .bg-\[\#ea4fa2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(234 79 162 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#7913e5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(121 19 229 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#b32e5811\] {
+  background-color: #b32e5811;
 }
 
 .bg-\[\#0d60d8\] {
@@ -1398,13 +1423,33 @@ video {
   color: rgb(121 19 229 / var(--tw-text-opacity));
 }
 
+.text-\[\#7913e5\] {
+  --tw-text-opacity: 1;
+  color: rgb(121 19 229 / var(--tw-text-opacity));
+}
+
 .text-\[\#0c1825\] {
   --tw-text-opacity: 1;
   color: rgb(12 24 37 / var(--tw-text-opacity));
 }
 
+.text-\[\#353535\] {
+  --tw-text-opacity: 1;
+  color: rgb(53 53 53 / var(--tw-text-opacity));
+}
+
+.text-\[\#0f0e0e\] {
+  --tw-text-opacity: 1;
+  color: rgb(15 14 14 / var(--tw-text-opacity));
+}
+
 .text-transparent {
   color: transparent;
+}
+
+.text-\[\#b32e58\] {
+  --tw-text-opacity: 1;
+  color: rgb(179 46 88 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1710,6 +1755,11 @@ footer i:hover {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:rounded-b-\[3rem\]:hover {
+  border-bottom-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+
 .hover\:border-lightBlue:hover {
   --tw-border-opacity: 1;
   border-color: rgb(13 96 216 / var(--tw-border-opacity));
@@ -1734,6 +1784,12 @@ footer i:hover {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:shadow-xl:hover {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 @media (min-width: 640px) {
   .sm\:right-\[-20\%\] {
     right: -20%;
@@ -1747,20 +1803,20 @@ footer i:hover {
     left: 10%;
   }
 
-  .sm\:right-\[15\%\] {
-    right: 15%;
-  }
-
-  .sm\:right-\[10\%\] {
-    right: 10%;
-  }
-
   .sm\:right-\[13\%\] {
     right: 13%;
   }
 
   .sm\:left-\[15\%\] {
     left: 15%;
+  }
+
+  .sm\:right-\[15\%\] {
+    right: 15%;
+  }
+
+  .sm\:right-\[10\%\] {
+    right: 10%;
   }
 
   .sm\:col-span-3 {
@@ -1966,6 +2022,14 @@ footer i:hover {
     font-size: 18.5px;
   }
 
+  .md\:text-\[25px\] {
+    font-size: 25px;
+  }
+
+  .md\:text-\[20px\] {
+    font-size: 20px;
+  }
+
   .md\:leading-\[30px\] {
     line-height: 30px;
   }
@@ -2033,12 +2097,12 @@ footer i:hover {
     height: 400px;
   }
 
-  .lg\:h-\[58vh\] {
-    height: 58vh;
-  }
-
   .lg\:h-\[73vh\] {
     height: 73vh;
+  }
+
+  .lg\:h-\[58vh\] {
+    height: 58vh;
   }
 
   .lg\:w-\[20\%\] {
