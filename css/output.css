@@ -829,6 +829,22 @@ video {
   height: 2%;
 }
 
+.h-\[60vh\] {
+  height: 60vh;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
+}
+
+.h-\[65vh\] {
+  height: 65vh;
+}
+
+.h-\[70vh\] {
+  height: 70vh;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
@@ -1121,14 +1137,14 @@ video {
   background-color: rgb(234 79 162 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#2295f2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 149 242 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#0d60d8\] {
   --tw-bg-opacity: 1;
   background-color: rgb(13 96 216 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2295f2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 149 242 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#10b259\] {
@@ -1944,6 +1960,14 @@ footer i:hover {
 
   .md\:text-\[16\.5px\] {
     font-size: 16.5px;
+  }
+
+  .md\:text-\[18\.5px\] {
+    font-size: 18.5px;
+  }
+
+  .md\:leading-\[30px\] {
+    line-height: 30px;
   }
 }
 
