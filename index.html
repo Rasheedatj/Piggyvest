@@ -22,7 +22,7 @@
   </head>
 
   <body class="relative">
-    <!-- header -->
+    <!-- #### HEADER ######## -->
     <header
       class="p-[2rem] flex justify-between items-center top-0 bg-white fixed w-[100%] z-50 header"
     >
@@ -38,6 +38,7 @@
         <span class="w-[2rem] h-[3px] bg-veryDarkBlue rounded-xl bottom"></span>
       </div>
 
+      <!-- #### NAV MENU ### -->
       <nav class="hidden lg:flex lg:space-x-12">
         <span class="save">
           <a
@@ -45,11 +46,12 @@
             class="capitalize text-veryDarkBlue font-[500] text-[1.16rem]"
             >save</a
           >
-          <!-- Hover menu -->
+          <!-- #### HOVER MENU ##### -->
           <section
-            class="fixed w-[30%] top-[12%] left-[10%] z-[10000] border-[1px] border-[#ececec] bg-[#fff] rounded-[10px] hidden hoverMenu flex flex-wrap shadow-sm"
+            class="fixed w-[30%] top-[12%] left-[10%] z-[10000] border-[1px] border-[#ececec] bg-[#fff] rounded-[10px] hidden hoverMenu flex-wrap shadow-sm"
           >
-            <div
+            <a
+              href="./src/piggybank.html"
               class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] transition duration-100 cursor-pointer hover:bg-lightGray"
             >
               <img
@@ -57,10 +59,11 @@
                 alt="automated"
                 class="w-[15%]"
               />
-              <a href="./src/piggybank.html">piggybank</a>
-            </div>
+              <p>piggybank</p>
+            </a>
 
-            <div
+            <a
+              href="#"
               class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] cursor-pointer hover:bg-lightGray transition duration-100"
             >
               <img
@@ -68,10 +71,11 @@
                 alt="automated"
                 class="w-[15%]"
               />
-              <a href="#">safelock</a>
-            </div>
+              <p>safelock</p>
+            </a>
 
-            <div
+            <a
+              href="#"
               class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] cursor-pointer hover:bg-lightGray transition duration-100"
             >
               <img
@@ -79,10 +83,11 @@
                 alt="automated"
                 class="w-[15%]"
               />
-              <a href="#">target savings</a>
-            </div>
+              <p>target savings</p>
+            </a>
 
-            <div
+            <a
+              href="#"
               class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] cursor-pointer hover:bg-lightGray transition duration-100"
             >
               <img
@@ -90,8 +95,8 @@
                 alt="automated"
                 class="w-[15%]"
               />
-              <a href="#">flex naira</a>
-            </div>
+              <p>flex naira</p>
+            </a>
           </section>
         </span>
         <a
@@ -131,7 +136,7 @@
       </div>
     </header>
 
-    <!-- hamburger menu -->
+    <!-- ######## HAMBURGER MENU ######### -->
     <div
       class="hidden flex-col items-center space-y-6 px-[1.5rem] bg-white menu pt-[10rem] fixed z-[2] inset-[0]"
     >
@@ -166,7 +171,7 @@
     </div>
 
     <section class="px-[2.5rem] pt-2xl sm:px-[3rem]">
-      <!-- hero section -->
+      <!-- ######## HERO SECTION ######## -->
       <section
         class="flex flex-col space-y-32 pt-[10rem] items-center md:pt-[10rem] sm:pt-[10rem] lg:flex-row lg:space-y-0 lg:pt-[15rem]"
       >
@@ -208,6 +213,7 @@
           </div>
         </div>
 
+        <!-- #### SIDE IMAGE ###### -->
         <div class="lg:w-[50%] flex justify-center lg:justify-center">
           <div class="relative headerimg">
             <img
@@ -218,7 +224,7 @@
             <img
               src="./src/images/rect.png"
               alt="rectangle"
-              class="absolute w-[80%] right-[-2%] top-[-7%] sm:right-[-20%] z-[-1] sm:w-[100%]"
+              class="absolute w-[800%] right-[-2%] top-[-7%] sm:right-[-20%] z-[-1] sm:w-[100%]"
             />
             <img
               src="./src/images/sqaure.svg"
@@ -249,9 +255,9 @@
         </div>
       </section>
 
-      <!-- security -->
+      <!-- ###### SECURITY ####### -->
       <section
-        class="flex flex-col container mx-auto space-y-6 items-center mt-[15rem] mb-[5rem] lg:flex-row lg:space-y-0 lg:items-start lg:space-x-14"
+        class="flex flex-col container mx-auto gap-[10rem] items-center mt-[15rem] mb-[5rem] lg:flex-row lg:space-y-0 lg:items-start lg:space-x-14"
       >
         <div class="w-[30%] sm:w-[15%] lg:w-[30%] lg:flex lg:justify-end">
           <img
@@ -283,7 +289,7 @@
         </div>
       </section>
 
-      <!-- savings varieties -->
+      <!-- #### SAVING VARIETIES #### -->
       <section
         class="flex flex-col space-y-12 my-[5rem] sm:grid sm:col-span-3 sm:gap-10 sm:space-y-0"
       >
@@ -407,7 +413,7 @@
         </div>
       </section>
 
-      <!-- invest -->
+      <!-- ### INVEST ### -->
       <section
         class="flex flex-col space-y-12 my-[5rem] items-center lg:flex-row lg:items-start lg:space-x-24"
       >
@@ -452,7 +458,7 @@
       </section>
     </section>
 
-    <!-- saver of the month -->
+    <!-- ####### SAVER OF THE MONTH ####### -->
     <section class="flex flex-col mt-12 lg:flex-row">
       <div
         class="bg-lightBlue flex flex-col py-[2rem] px-xl items-center md:py-[5rem] sm:py-[5rem] lg:h-[75vh] lg:px-[5rem] w-[100%]"
@@ -491,7 +497,7 @@
     </section>
 
     <section class="px-[1.5rem] pt-[1.5rem">
-      <!-- customer reviews -->
+      <!-- #### CUSTOMER REVIEWS #### -->
       <section
         class="flex flex-col space-y-6 mt-16 lg:flex-row lg:space-x-24 lg:px-[5rem]"
       >
@@ -722,7 +728,7 @@
       </section>
     </section>
 
-    <!-- featured in -->
+    <!-- ### FEATURED IN ###### -->
     <div
       class="flex flex-col justify-between items-center space-y-12 bg-grayBg px-[1.5rem] py-[5rem] mt-24 sm:px-[5rem] lg:flex-row lg:space-y-0"
     >
@@ -746,7 +752,7 @@
       </div>
     </div>
 
-    <!-- footer -->
+    <!-- ##### FOOTER #### -->
     <footer
       class="flex flex-col space-y-6 mt-24 px-[1.5rem] pb-[2rem] lg:px-[1.5rem]"
     >
@@ -898,7 +904,7 @@
       </div>
     </footer>
 
-    <!-- cookie notification -->
+    <!-- #### COOKIE NOTIFICATION ##### -->
 
     <div
       class="bg-veryDarkBlue sm:w-[70%] fixed bottom-[4%] rounded-[25px] p-[2rem] left-0 right-0 m-auto cookie"

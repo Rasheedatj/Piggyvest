@@ -152,6 +152,12 @@ footer i:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .headerimg::after {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 400px) {
   .investImg::after {
     left: 0%;
@@ -198,8 +204,5 @@ footer i:hover {
   .mySwiper {
     border: 2px solid red;
     overflow-y: hidden;
-  }
-  .swiper-slide {
-    /* animation: 2000ms reviews infinite; */
   }
 }
