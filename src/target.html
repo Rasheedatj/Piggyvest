@@ -18,17 +18,19 @@
     />
 
     <!-- external css file -->
-    <link href="./css/output.css" rel="stylesheet" />
+    <link href="../css/output.css" rel="stylesheet" />
   </head>
 
   <body class="relative">
-    <!-- #### HEADER ######## -->
+    <!-- header -->
     <header
       class="p-[2rem] flex justify-between items-center top-0 bg-white fixed w-[100%] z-50 header"
     >
       <!-- logo -->
       <div class="lg:w-[20%]">
-        <a href="#"> <img src="./src/images/index-logo.svg" alt="logo" /></a>
+        <a href="../index.html">
+          <img src="../src/images/target-logo.svg" alt="logo"
+        /></a>
       </div>
 
       <!-- hamburger button -->
@@ -38,7 +40,6 @@
         <span class="w-[2rem] h-[3px] bg-veryDarkBlue rounded-xl bottom"></span>
       </div>
 
-      <!-- #### NAV MENU ### -->
       <nav class="hidden lg:flex lg:space-x-12">
         <span class="save">
           <a
@@ -46,16 +47,16 @@
             class="capitalize text-veryDarkBlue font-[500] text-[1.16rem]"
             >save</a
           >
-          <!-- #### HOVER MENU ##### -->
+          <!-- Hover menu -->
           <section
             class="fixed w-[30%] top-[12%] left-[10%] z-[10000] border-[1px] border-[#ececec] bg-[#fff] rounded-[10px] hidden hoverMenu flex-wrap shadow-sm"
           >
             <a
-              href="./src/piggybank.html"
+              href="./piggybank.html"
               class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] transition duration-100 cursor-pointer hover:bg-lightGray"
             >
               <img
-                src="./src/images/automated.png"
+                src="../src/images/automated.png"
                 alt="automated"
                 class="w-[15%]"
               />
@@ -63,11 +64,11 @@
             </a>
 
             <a
-              href="./src/safelock.html"
+              href="#"
               class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] cursor-pointer hover:bg-lightGray transition duration-100"
             >
               <img
-                src="./src/images/safelock.png"
+                src="../src/images/safelock.png"
                 alt="automated"
                 class="w-[15%]"
               />
@@ -75,11 +76,11 @@
             </a>
 
             <a
-              href="./src/target.html"
+              href="#"
               class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] cursor-pointer hover:bg-lightGray transition duration-100"
             >
               <img
-                src="./src/images/target.png"
+                src="../src/images/target.png"
                 alt="automated"
                 class="w-[15%]"
               />
@@ -87,11 +88,11 @@
             </a>
 
             <a
-              href="./src/flex.html"
+              href="./flex.html"
               class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] cursor-pointer hover:bg-lightGray transition duration-100"
             >
               <img
-                src="./src/images/flex.png"
+                src="../src/images/flex.png"
                 alt="automated"
                 class="w-[15%]"
               />
@@ -136,7 +137,7 @@
       </div>
     </header>
 
-    <!-- ######## HAMBURGER MENU ######### -->
+    <!-- hamburger menu -->
     <div
       class="hidden flex-col items-center space-y-6 px-[1.5rem] bg-white menu pt-[10rem] fixed z-[2] inset-[0]"
     >
@@ -171,7 +172,7 @@
     </div>
 
     <section class="px-[2.5rem] pt-2xl sm:px-[3rem]">
-      <!-- ######## HERO SECTION ######## -->
+      <!-- hero section -->
       <section
         class="flex flex-col space-y-32 pt-[10rem] items-center md:pt-[10rem] sm:pt-[10rem] lg:flex-row lg:space-y-0 lg:pt-[15rem]"
       >
@@ -179,325 +180,476 @@
           <h1
             class="text-[38px] text-veryDarkBlue font-[600] text-center md:text-[55px] sm:text-[55px] lg:text-start lg:text-[58.5px] lg:leading-[82.42px]"
           >
-            The Better Way to Save & Invest.
+            Target
           </h1>
           <p
             class="rounded-[2px] text-paragraphColor text-center py-[1rem] md:text-[16.5px] md:rounded-[2px] sm:text-[16.5px] lg:text-start lg:w-[90%]"
           >
-            PiggyVest helps over 4 million customers achieve their financial
-            goals by helping them save and invest with ease.
+            Reach all your unique savings goals, individually or as a group.
+            Earn up to 9% p.a.
           </p>
-          <!-- create account button -->
+          <!-- start saving button -->
           <button
-            class="flex text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer mt-6 mb-9 mx-auto lg:mx-0"
+            class="flex text-white bg-[#10b259] font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer mt-6 mb-9 mx-auto lg:mx-0"
           >
-            Create free account
+            Start saving today
           </button>
-
-          <!-- playstore button -->
-          <div class="flex flex-col md:flex-row sm:flex-row gap-[1.5rem]">
-            <button
-              class="font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex items-center gap-[5px] mx-auto"
-            >
-              <img src="./src/images/apple-icon.svg" alt="apple" class="" />
-              <p>Get on i-phone</p>
-            </button>
-
-            <!-- android button -->
-            <button
-              class="font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex gap-[5px] items-center mx-auto"
-            >
-              <img src="./src/images/google-icon.svg" alt="android" />
-              <p>Get on Android</p>
-            </button>
-          </div>
         </div>
 
-        <!-- #### SIDE IMAGE ###### -->
-        <div class="lg:w-[50%] flex justify-center lg:justify-center">
-          <div class="relative headerimg">
+        <div class="lg:w-[50%]">
+          <div class="relative headerimg flex justify-center">
             <img
-              src="./src/images/headerImg.png"
+              src="../src/images/phone (4).png"
               alt="header image"
-              class="w-[90%] sm:w-[100%]"
+              class="w-[90%] sm:w-[50%]"
             />
             <img
-              src="./src/images/rect.png"
+              src="../src/images/fees.png"
               alt="rectangle"
-              class="absolute w-[800%] right-[-2%] top-[-7%] sm:right-[-20%] z-[-1] sm:w-[100%]"
+              class="absolute w-[350px] left-[-20%] sm:left-[10%] top-[30%]"
             />
             <img
-              src="./src/images/sqaure.svg"
+              src="../src/images/wedding.png"
               alt="rectangle"
-              class="absolute top-[-7%] left-[-7%]"
+              class="absolute w-[350px] left-[-20%] sm:left-[10%] top-[50%]"
+            />
+
+            <img
+              src="../src/images/green-dot.svg"
+              alt="rectangle"
+              class="absolute right-[-10%] top-[20%] sm:right-[13%] w-[10%]"
             />
             <img
-              src="./src/images/rent.png"
+              src="../src/images/green-square.svg"
               alt="rectangle"
-              class="absolute w-[230px] sm:w-[250px] top-[25%] left-[-15%]"
+              class="absolute right-[-10%] top-[-3%] sm:left-[15%]"
             />
             <img
-              src="./src/images/investify.png"
+              src="../src/images/greeround.svg"
               alt="rectangle"
-              class="absolute w-[230px] sm:w-[250px] img4 right-[-10%] top-[50%] sm:right-[-39%]"
-            />
-            <img
-              src="./src/images/circle.svg"
-              alt="rectangle"
-              class="absolute bottom-[80%] right-[-10%]"
-            />
-            <img
-              src="./src/images/dot2.svg"
-              alt="rectangle"
-              class="absolute bottom-[10%] left-[-5%]"
+              class="absolute w-[10%] right-[-10%] bottom-[0] sm:right-[13%]"
             />
           </div>
         </div>
       </section>
 
-      <!-- ###### SECURITY ####### -->
-      <section
-        class="flex flex-col container mx-auto gap-[10rem] items-center mt-[15rem] mb-[5rem] lg:flex-row lg:space-y-0 lg:items-start lg:space-x-14"
-      >
-        <div class="w-[30%] sm:w-[15%] lg:w-[30%] lg:flex lg:justify-end">
-          <img
-            src="./src/images/security.png"
-            alt="security "
-            class="w-[30%] sm:w-[15%] lg:w-[40%]"
-          />
-        </div>
-        <div class="lg:w-[60%]">
-          <h1
-            class="text-[28px] rounded-[10px] font-[700] text-center lg:text-start"
-          >
-            Your security is our priority
-          </h1>
-          <p
-            class="text-paragraphColor text-center mt-6 rounded-[2px] text-[15.5px] lg:text-start"
-          >
-            PiggyVest uses the highest level of Internet Security and it is
-            secured by 256 bits SSL security encryption to ensure that your
-            information is comepletely protected from fraud.
-          </p>
-          <div class="text-center mt-6 lg:text-start">
-            <a
-              href="#"
-              class="mt-12 text-lightBlue font-[400] text-center learn relative"
-              >Learn more ></a
-            >
-          </div>
-        </div>
+      <!-- security -->
+      <section class="mt-[5rem] mb-[5rem]">
+        <h1
+          class="text-[31px] sm:text-[51px] rounded-[10px] font-[700] text-center"
+        >
+          Save towards multiple goals
+        </h1>
+        <p class="text-paragraphColor text-center rounded-[2px] text-[16.5px]">
+          Target Savings helps you get there faster. You can even team up with
+          others to reach a collective target.
+        </p>
       </section>
 
-      <!-- #### SAVING VARIETIES #### -->
-      <section
-        class="flex flex-col space-y-12 my-[5rem] sm:grid sm:col-span-3 sm:gap-10 sm:space-y-0"
-      >
+      <!-- savings varieties -->
+      <section class="flex flex-col sm:flex-row gap-[4rem] my-[5rem] sm:gap-10">
+        <!-- save automatically -->
         <div
-          class="flex flex-col space-y-6 items-center sm:col-start-1 sm:col-end-3 lg:col-start-1 lg:col-end-2 lg:items-start lg:justify-center"
+          class="bg-grayBg rounded-[20px] px-[1.5rem] pt-[2rem] pb-[4rem] saving md:mx-auto sm:col-start-2 sm:col-end-3 sm:w-[100%] lg:col-start-3 lg:col-end-4"
         >
-          <h1
-            class="text-veryDarkBlue text-[28px] rounded-[10px] font-[700] text-center md:w-[40%] sm:w-[40%] lg:w-[80%] lg:text-start lg:text-[38px] lg:leading-[40.08px]"
-          >
-            4 ways to build your savings
-          </h1>
-          <p
-            class="text-center text-paragraphColor rounded-[2px] sm:w-[50%] lg:text-start lg:w-[80%]"
-          >
-            Earn 5%-15% when you save with any of these PiggyVest plans.
-          </p>
-          <button
-            class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer mt-9"
-          >
-            start saving
-          </button>
-        </div>
-
-        <!-- automated savings -->
-        <div
-          class="bg-grayBg rounded-[20px] px-[1.5rem] py-[2rem] saving md:mx-auto sm:col-start-1 sm:col-end-2 sm:w-[100%] lg:col-start-2 lg:col-end-3"
-        >
-          <a href="" class="flex flex-col items-center space-y-3">
-            <div class="w-[20%] mx-auto pb-[1.5rem">
-              <img src="./src/images/automated.png" alt="piggybank" />
+          <a href="" class="flex flex-col">
+            <div class="w-[20%] pb-[1.5rem]">
+              <img src="../src/images/icon1 (1).png" alt="save icon" />
             </div>
-            <h1 class="text-[1.3rem] text-veryDarkBlue font-[700] text-center">
-              Automated Savings
+            <h1 class="text-[1.3rem] text-veryDarkBlue font-[700] pb-[1rem]">
+              Your targets, your rules
             </h1>
             <p
-              class="text-center text-paragraphColor rounded-[2px] sm:h-[80px] sm:text-[16.5px]"
+              class="text-paragraphColor rounded-[2px] sm:h-4xl text-[16.5px] sm:text-[18.5px] leading-[30px]"
             >
-              Build a dedicated savings faster on your terms manually or
-              automatically.
+              Customise the rules and duration of your target savings as you
+              wish. From public or private mode, automated savings, or multiple
+              targets, you’re in control.
             </p>
-
-            <div class="pt-[2rem] flex space-x-3 items-center arrow">
-              <img src="./src/images/arrow1.svg" alt="arrow" />
-              <p class="font-[600]">Piggybank</p>
-            </div>
-          </a>
-        </div>
-        <!-- fixed saving -->
-        <div
-          class="bg-grayBg rounded-[20px] px-[1.5rem] py-[2rem] saving md:mx-auto sm:col-start-2 sm:col-end-3 sm:w-[100%] lg:col-start-3 lg:col-end-4"
-        >
-          <a href="" class="flex flex-col items-center space-y-3">
-            <div class="w-[20%] mx-auto pb-[1.5rem]">
-              <img src="./src/images/safelock.png" alt="piggybank" />
-            </div>
-            <h1 class="text-[1.3rem] text-veryDarkBlue font-[700] text-center">
-              Fixed Savings
-            </h1>
-            <p
-              class="text-center text-paragraphColor rounded-[2px] sm:h-4xl sm:text-[16.5px]"
-            >
-              Lock money away for a fixed duration with no access to it until
-              maturity. It's like having a fixed deposit
-            </p>
-
-            <div class="pt-[2rem] flex space-x-3 items-center arrow">
-              <img src="./src/images/safeArrow.svg" alt="arrow" />
-              <p class="font-[600]">Safelock</p>
-            </div>
           </a>
         </div>
 
-        <!-- target -->
+        <!-- save on the go -->
         <div
-          class="bg-grayBg rounded-[20px] px-[1.5rem] py-[2rem] saving md:mx-auto sm:w-[100%] lg:col-start-2 lg:col-end-3"
+          class="bg-grayBg rounded-[20px] px-[1.5rem] pt-[2rem] pb-[4rem] saving md:mx-auto sm:w-[100%] lg:col-start-2 lg:col-end-3"
         >
-          <a href="" class="flex flex-col items-center space-y-3">
-            <div class="w-[20%] mx-auto pb-[1.5rem]">
-              <img src="./src/images/target.png" alt="piggybank" />
+          <a href="" class="flex flex-col">
+            <div class="w-[20%] pb-[1.5rem]">
+              <img src="../src/images/icon2 (1).png" alt="save" />
             </div>
-            <h1 class="text-[1.3rem] text-veryDarkBlue font-[700] text-center">
-              Goal Oriented Savings
+            <h1 class="text-[1.3rem] text-veryDarkBlue font-[700] pb-[1rem]">
+              Save with a group
             </h1>
             <p
-              class="text-center text-paragraphColor rounded-[2px] sm:text-[16.5px]"
+              class="text-paragraphColor rounded-[2px] text-[16.5px] sm:text-[18.5px] leading-[30px]"
             >
-              Reach all your savings goal faster. Save towards multiple goals on
-              your own or with a group
+              Challenge yourself to meet your goals by saving towards a common
+              goal with a group. No one has access to your funds but you.
             </p>
-
-            <div class="pt-[2rem] flex space-x-3 items-center arrow">
-              <img src="./src/images/target.svg" alt="arrow" />
-              <p class="font-[600]">Target savings</p>
-            </div>
           </a>
         </div>
 
-        <!-- flexible savvings -->
+        <!-- build discipline -->
         <div
-          class="bg-grayBg rounded-[20px] px-[1.5rem] py-[2rem] saving md:mx-auto sm:w-[100%]"
+          class="bg-grayBg rounded-[20px] px-[1.5rem] pt-[2rem] pb-[4rem] saving md:mx-auto sm:w-[100%]"
         >
-          <a href="" class="flex flex-col items-center space-y-3">
-            <div class="w-[20%] mx-auto pb-[1.5rem">
-              <img src="./src/images/flex.png" alt="piggybank" />
+          <a href="" class="flex flex-col">
+            <div class="w-[20%] pb-[1.5rem]">
+              <img src="../src/images/icon3 (1).png" alt="build" />
             </div>
-            <h1 class="text-[1.3rem] text-veryDarkBlue font-[700] text-center">
-              Flexible Savings
+            <h1 class="text-[1.3rem] text-veryDarkBlue font-[700] pb-[1rem]">
+              Daily interest accrued
             </h1>
             <p
-              class="text-center text-paragraphColor rounded-[2px] sm:text-[16.5px]"
+              class="text-paragraphColor rounded-[2px] text-[16.5px] sm:text-[18.5px] leading-[30px]"
             >
-              Save,transfer, withdraw, manage and organise your money for free
-              at any time
+              Earn 9% per annum to help you reach your goal faster. Think of it
+              as a reward for meeting your target.
             </p>
-
-            <div class="pt-[2rem] flex space-x-3 items-center arrow">
-              <img src="./src/images/flex.svg" alt="arrow" />
-              <p class="font-[600]">Flex Naira</p>
-            </div>
           </a>
-        </div>
-      </section>
-
-      <!-- ### INVEST ### -->
-      <section
-        class="flex flex-col space-y-12 my-[5rem] items-center lg:flex-row lg:items-start lg:space-x-24"
-      >
-        <div
-          class="investImg relative w-[100%] self-center flex justify-center items-center lg:w-[60%] lg:justify-end"
-        >
-          <img
-            src="./src/images/invest.png"
-            alt="invest"
-            class="w-[50%] invest"
-          />
-        </div>
-
-        <div
-          class="flex flex-col space-y-9 items-center lg:w-[80%] lg:items-start"
-        >
-          <button
-            class="bg-lightPurple text-purple text-[1.3rem] font-[500] rounded-[20px] self-center px-[1rem] py-[.5rem] lg:self-start"
-          >
-            up to 25% returns
-          </button>
-
-          <h1
-            class="text-veryDarkBlue text-[28px] rounded-[10px] font-[700] text-center sm:text-[41px] sm:rounded-[20px] sm:w-[80%] lg:text-start lg:text-[51px] lg:leading-[64.1px"
-          >
-            Access investment opportunities
-          </h1>
-
-          <p
-            class="text-center text-paragraphColor rounded-[2px] sm:w-[60%] lg:text-start"
-          >
-            Invest securely and confidently on the go. Grow your money
-            confidently by investing in pre-vetted investment opportunities.
-          </p>
-
-          <a
-            href="#"
-            class="mt-12 text-purple font-[400] text-center relative learn2"
-            >Learn more about investment &nbsp;></a
-          >
         </div>
       </section>
     </section>
 
-    <!-- ####### SAVER OF THE MONTH ####### -->
+    <!-- #### AVOID TEMPTATIONS ### -->
     <section class="flex flex-col mt-12 lg:flex-row">
       <div
-        class="bg-lightBlue flex flex-col py-[2rem] px-xl items-center md:py-[5rem] sm:py-[5rem] lg:h-[75vh] lg:px-[5rem] w-[100%]"
+        class="bg-[#10b259] flex flex-col py-[2rem] px-xl items-center md:py-[5rem] sm:py-[5rem] lg:px-[5rem] w-[100%]"
       >
         <h1
-          class="text-[35pxx] text-white font-[700] text-center lg:text-start lg:text-[51px] lg:w-[100%] meet"
+          class="text-[31px] text-white font-[700] text-center lg:text-start lg:text-[37px] lg:w-[100%] meet"
         >
-          Meet the saver of the month!
+          Saving ‘just because’ is great, but saving for something special is a
+          lot of fun.
         </h1>
         <p
-          class="text-center text-white rounded-[2px] pt-[1rem] md:w-[80%] sm:px-[5rem] sm:py-[1rem] lg:text-start lg:w-[100%] lg:px-0 lg:pr-[5rem]"
+          class="text-center px-[1rem] pt-[3rem] text-white rounded-[2px] md:w-[80%] sm:px-[5rem] sm:py-[1rem] lg:text-start lg:w-[100%] lg:px-0 lg:pr-[5rem] sm:text-[18.5px] leading-[30px]"
         >
-          Every month, we shine a spotlight on one saver, asking them questions
-          about their savings culture and how the product is specifically
-          helping them shape how they spend and save for future
-          responsibilities.
+          Got a savings goal in mind? We’ll help you reach it! Saving for a new
+          phone? Check. Dad’s surprise birthday? Check. A new car, special
+          vacation? Check and check. Target Savings helps you reach all your
+          savings goals easily and faster.
         </p>
-
-        <div
-          class="flex space-x-3 self-center items-center pt-[3rem] lg:self-start"
-        >
-          <img src="./src/images/titoArrow.svg" alt="arrow" />
-          <p class="capitalize text-white font-[700] text-[18.5px]">
-            meet the Oyetade's
-          </p>
-        </div>
       </div>
 
-      <div class="tito w-[100%]">
+      <div class="tito w-[80%]">
         <img
-          src="./src/images/oyetades.jpg"
+          src="../src/images/target-build.png"
           alt=""
-          class="object-cover lg:h-[75vh] w-[100%]"
+          class="object-cover lg:h-[73vh] w-[100%]"
         />
       </div>
     </section>
 
+    <!-- ####### SAVING CHALLENGES #### -->
+
+    <section class="my-[7rem]">
+      <h1
+        class="text-[31px] sm:text-[51px] rounded-[10px] font-[700] text-center leading-[70px] pb-[4rem]"
+      >
+        Recent Public Saving Challenges
+      </h1>
+
+      <section class="flex gap-[2rem] md:grid md:grid-cols-3 px-[3rem]">
+        <!-- #### CHALLENGE 1 ######## -->
+        <div class="flex flex-col">
+          <div>
+            <img
+              src="./images/milloniare-mindset.jpg"
+              alt="investent plan"
+              class="rounded-t-[2rem]"
+            />
+          </div>
+
+          <div class="bg-grayBg py-[3rem] px-[2rem] rounded-b-[2rem]">
+            <h5
+              class="capitalize text-[20px] font-[700] text-[#0c1825] leading-[30px]"
+            >
+              Millonaires mindset
+            </h5>
+            <!-- FLEX CONTAINER -->
+            <div class="flex justify-between my-[2rem]">
+              <div>
+                <p class="font-medium">13</p>
+                <p>members</p>
+              </div>
+              <div>
+                <p class="font-medium">₦200k</p>
+                <p>per member</p>
+              </div>
+              <div>
+                <p class="font-medium">365</p>
+                <p>days left</p>
+              </div>
+            </div>
+
+            <!-- progress bar -->
+            <div>
+              <p class="font-[700]">1%</p>
+
+              <div class="flex">
+                <span
+                  class="bg-[#10b259] w-[2%] rounded-l-[7rem] text-transparent"
+                  >kkd</span
+                >
+                <span
+                  class="bg-[#e5e5e5] w-[90%] rounded-r-[5rem] text-transparent"
+                  >jdj</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #### CHALLENGE 2 ######## -->
+        <div class="flex flex-col">
+          <div>
+            <img
+              src="./images/business-header2-min.jpg"
+              alt="investent plan"
+              class="rounded-t-[2rem]"
+            />
+          </div>
+
+          <div class="bg-grayBg py-[3rem] px-[2rem] rounded-b-[2rem]">
+            <h5
+              class="capitalize text-[20px] font-[700] text-[#0c1825] leading-[30px]"
+            >
+              Portfolio 9 (community) savin...
+            </h5>
+            <!-- FLEX CONTAINER -->
+            <div class="flex justify-between my-[2rem]">
+              <div>
+                <p class="font-medium">13</p>
+                <p>members</p>
+              </div>
+              <div>
+                <p class="font-medium">₦30k</p>
+                <p>per member</p>
+              </div>
+              <div>
+                <p class="font-medium">99</p>
+                <p>days left</p>
+              </div>
+            </div>
+
+            <!-- progress bar -->
+            <div>
+              <p class="font-[700]">7%</p>
+
+              <div class="flex">
+                <span
+                  class="bg-[#10b259] w-[7%] h-[2%] rounded-l-[7rem] text-transparent"
+                  >kkd</span
+                >
+                <span
+                  class="bg-[#e5e5e5] w-[90%] rounded-r-[5rem] text-transparent"
+                  >jdj</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #### CHALLENGE 3 ######## -->
+        <div class="flex flex-col">
+          <div>
+            <img
+              src="./images/save-anything-header2-min.jpg"
+              alt="investent plan"
+              class="rounded-t-[2rem]"
+            />
+          </div>
+
+          <div class="bg-grayBg py-[3rem] px-[2rem] rounded-b-[2rem]">
+            <h5
+              class="capitalize text-[20px] font-[700] text-[#0c1825] leading-[30px]"
+            >
+              IMC saving
+            </h5>
+            <!-- FLEX CONTAINER -->
+            <div class="flex justify-between my-[2rem]">
+              <div>
+                <p class="font-medium">21</p>
+                <p>members</p>
+              </div>
+              <div>
+                <p class="font-medium">₦60k</p>
+                <p>per member</p>
+              </div>
+              <div>
+                <p class="font-medium">118</p>
+                <p>days left</p>
+              </div>
+            </div>
+
+            <!-- progress bar -->
+            <div>
+              <p class="font-[700]">5%</p>
+
+              <div class="flex">
+                <span
+                  class="bg-[#10b259] w-[5%] h-[2%] rounded-l-[5rem] text-transparent"
+                  >kkd</span
+                >
+                <span
+                  class="bg-[#e5e5e5] w-[90%] rounded-r-[5rem] text-transparent"
+                  >jdj</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #### CHALLENGE 4 ######## -->
+        <div class="flex flex-col">
+          <div>
+            <img
+              src="./images/wedding-header2-min.jpg"
+              alt="investent plan"
+              class="rounded-t-[2rem]"
+            />
+          </div>
+
+          <div class="bg-grayBg py-[3rem] px-[2rem] rounded-b-[2rem]">
+            <h5
+              class="uppercase text-[20px] font-[700] text-[#0c1825] leading-[30px]"
+            >
+              MIC`22 final year dinner
+            </h5>
+            <!-- FLEX CONTAINER -->
+            <div class="flex justify-between my-[2rem]">
+              <div>
+                <p class="font-medium">12</p>
+                <p>members</p>
+              </div>
+              <div>
+                <p class="font-medium">₦15k</p>
+                <p>per member</p>
+              </div>
+              <div>
+                <p class="font-medium">43</p>
+                <p>days left</p>
+              </div>
+            </div>
+
+            <!-- progress bar -->
+            <div>
+              <p class="font-[700]">7%</p>
+
+              <div class="flex">
+                <span
+                  class="bg-[#10b259] w-[7%] h-[2%] rounded-l-[5rem] text-transparent"
+                  >kkd</span
+                >
+                <span
+                  class="bg-[#e5e5e5] w-[90%] rounded-r-[5rem] text-transparent"
+                  >jdj</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #### CHALLENGE 5 ######## -->
+        <div class="flex flex-col">
+          <div>
+            <img
+              src="./images/wedding-header2-min (1).jpg"
+              alt="investent plan"
+              class="rounded-t-[2rem]"
+            />
+          </div>
+
+          <div class="bg-grayBg py-[3rem] px-[2rem] rounded-b-[2rem]">
+            <h5
+              class="uppercase text-[20px] font-[700] text-[#0c1825] leading-[30px]"
+            >
+              mic `22 fyd
+            </h5>
+            <!-- FLEX CONTAINER -->
+            <div class="flex justify-between my-[2rem]">
+              <div>
+                <p class="font-medium">11</p>
+                <p>members</p>
+              </div>
+              <div>
+                <p class="font-medium">₦1000k</p>
+                <p>per member</p>
+              </div>
+              <div>
+                <p class="font-medium">43</p>
+                <p>days left</p>
+              </div>
+            </div>
+
+            <!-- progress bar -->
+            <div>
+              <p class="font-[700]">20%</p>
+
+              <div class="flex">
+                <span
+                  class="bg-[#10b259] w-[20%] h-[2%] rounded-l-[5rem] text-transparent"
+                  >kkd</span
+                >
+                <span
+                  class="bg-[#e5e5e5] w-[90%] rounded-r-[5rem] text-transparent"
+                  >jdj</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #### CHALLENGE 6 ######## -->
+        <div class="flex flex-col">
+          <div>
+            <img
+              src="./images/save-anything-header2-min.jpg"
+              alt="investent plan"
+              class="rounded-t-[2rem]"
+            />
+          </div>
+
+          <div class="bg-grayBg py-[3rem] px-[2rem] rounded-b-[2rem]">
+            <h5
+              class="capitalize text-[20px] font-[700] text-[#0c1825] leading-[30px]"
+            >
+              soft life gang 😎
+            </h5>
+            <!-- FLEX CONTAINER -->
+            <div class="flex justify-between my-[2rem]">
+              <div>
+                <p class="font-medium">9</p>
+                <p>members</p>
+              </div>
+              <div>
+                <p class="font-medium">₦100k</p>
+                <p>per member</p>
+              </div>
+              <div>
+                <p class="font-medium">233</p>
+                <p>days left</p>
+              </div>
+            </div>
+
+            <!-- progress bar -->
+            <div>
+              <p class="font-[700]">0%</p>
+
+              <div class="flex">
+                <span
+                  class="bg-[#10b259] w-[2%] h-[2%] rounded-l-[5rem] text-transparent"
+                  >j</span
+                >
+                <span
+                  class="bg-[#e5e5e5] w-[90%] rounded-r-[5rem] text-transparent"
+                  >k</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
     <section class="px-[1.5rem] pt-[1.5rem">
-      <!-- #### CUSTOMER REVIEWS #### -->
+      <!-- ###### CUSTOMER REVIEWS #### -->
       <section
         class="flex flex-col space-y-6 mt-16 lg:flex-row lg:space-x-24 lg:px-[5rem]"
       >
@@ -713,14 +865,14 @@
             <button
               class="font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex items-center gap-[5px] mx-auto"
             >
-              <img src="./src/images/apple-icon.svg" alt="apple" class="" />
+              <img src="../src/images/apple-icon.svg" alt="apple" class="" />
               <p>Get on i-phone</p>
             </button>
             <!-- android button -->
             <button
               class="mx-auto font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex gap-[5px] self-center items-center"
             >
-              <img src="./src/images/google-icon.svg" alt="android" class="" />
+              <img src="../src/images/google-icon.svg" alt="android" class="" />
               <p>Get on Android</p>
             </button>
           </div>
@@ -728,7 +880,7 @@
       </section>
     </section>
 
-    <!-- ### FEATURED IN ###### -->
+    <!-- #### FEATURED IN #### -->
     <div
       class="flex flex-col justify-between items-center space-y-12 bg-grayBg px-[1.5rem] py-[5rem] mt-24 sm:px-[5rem] lg:flex-row lg:space-y-0"
     >
@@ -741,18 +893,18 @@
         class="flex flex-col items-center space-y-9 sm:flex-row sm:space-x-10 sm:space-y-0 lg:w-[80%] lg:justify-center"
       >
         <div class="w-[50%] sm:w-[30%] lg:w-[20%]">
-          <img src="./src/images/techpoint.png" alt="tech point" />
+          <img src="../src/images/techpoint.png" alt="tech point" />
         </div>
         <div class="w-[50%] sm:w-[30%] lg:w-[20%]">
-          <img src="./src/images/gaurdian.png" alt="tech point" />
+          <img src="../src/images/gaurdian.png" alt="tech point" />
         </div>
         <div class="w-[50%] sm:w-[30%] lg:w-[20%]">
-          <img src="./src/images/crunch.png" alt="crunch" />
+          <img src="../src/images/crunch.png" alt="crunch" />
         </div>
       </div>
     </div>
 
-    <!-- ##### FOOTER #### -->
+    <!-- #### FOOTER ###### -->
     <footer
       class="flex flex-col space-y-6 mt-24 px-[1.5rem] pb-[2rem] lg:px-[1.5rem]"
     >
@@ -762,13 +914,13 @@
           class="flex flex-col col-start-1 col-end-3 space-y-9 lg:col-start-1 lg:col-end-2 lg:w-[100%]"
         >
           <div class="">
-            <img src="./src/images/index-logo.svg" alt="logo" />
+            <img src="../src/images/index-logo.svg" alt="logo" />
           </div>
           <div
             class="w-[50%] border-[1px] rounded-[10px] py-[13px] px-[12px] sm:w-[20%] ndpr lg:w-[60%]"
           >
             <img
-              src="./src/images/footer image 2.webp"
+              src="../src/images/footer image 2.webp"
               alt="security image 2"
             />
           </div>
@@ -904,40 +1056,7 @@
       </div>
     </footer>
 
-    <!-- #### COOKIE NOTIFICATION ##### -->
-
-    <div
-      class="bg-veryDarkBlue sm:w-[70%] fixed bottom-[4%] rounded-[25px] p-[2rem] left-0 right-0 m-auto cookie"
-    >
-      <h1 class="capitalize text-white font-[700] text-[20px] rounded-[2px]">
-        cookie notification
-      </h1>
-
-      <div
-        class="flex flex-col items-center md:space-y-6 lg:flex-row lg:space-y-0 lg:space-x-12 lg:justify-between lg:items-start"
-      >
-        <p class="text-white leading-[20px] mt-3 text-[15px]">
-          This website uses cookies to optimize your experience and to provide
-          us insight on how to interact with the site. All information shared
-          with us through cookies are secure and covered by our data privacy
-          obligations. You can access our Privacy Policy
-          <a href="#" class="underline">here</a>
-        </p>
-
-        <div class="flex space-x-6 items-center">
-          <button class="decline text-white disappear capitalize font-[700]">
-            decline
-          </button>
-          <button
-            class="accept disappear text-veryDarkBlue hover:text-lightBlue transition duration-300 capitalize font-[700] bg-[white] h-max py-[15px] px-[25px] rounded-[15px]"
-          >
-            accept
-          </button>
-        </div>
-      </div>
-    </div>
-
     <!-- external javascript link -->
-    <script src="./src/app.js"></script>
+    <script src="../src/app.js"></script>
   </body>
 </html>
