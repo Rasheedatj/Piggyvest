@@ -10,12 +10,17 @@
       crossorigin="anonymous"
     ></script>
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ 
     <link
       href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;800&display=swap"
       rel="stylesheet"
     />
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+
 
     <!-- external css file -->
     <link href="../css/output.css" rel="stylesheet" />
@@ -589,7 +594,7 @@
       >
         <!-- scroll reviews -->
         <div class="swiper mySwiper lg:w-[40%] lg:h-[400px]">
-          <div class="swiper-wrapper flex flex-col space-y-12">
+          <div class="swiper-wrapper ">
             <!-- review one -->
             <div class="swiper-slide bg-lightGray p-[1rem]">
               <small class="flex justify-end"
@@ -597,7 +602,7 @@
               >
               <div class="flex space-x-4">
                 <img
-                  src="./src/images/review1.jpeg"
+                  src="./images/review1.jpeg"
                   alt="user image"
                   class="w-[50px] h-[50px] rounded-5xl"
                 />
@@ -618,7 +623,7 @@
               >
               <div class="flex space-x-4">
                 <img
-                  src="./src/images/review 2.jpeg"
+                  src="./images/review 2.jpeg"
                   alt="user image"
                   class="w-15xl h-[50px] rounded-5xl"
                 />
@@ -639,7 +644,7 @@
               >
               <div class="flex space-x-4">
                 <img
-                  src="./src/images/review3.jpeg"
+                  src="./images/review3.jpeg"
                   alt="user image"
                   class="w-15xl h-[50px] rounded-5xl"
                 />
@@ -663,7 +668,7 @@
               >
               <div class="flex space-x-4">
                 <img
-                  src="./src/images/review4.jpeg"
+                  src="./images/review4.jpeg"
                   alt="user image"
                   class="w-15xl h-[50px] rounded-5xl"
                 />
@@ -686,7 +691,7 @@
               >
               <div class="flex space-x-4">
                 <img
-                  src="./src/images/review4.jpeg"
+                  src="./images/review4.jpeg"
                   alt="user image"
                   class="w-15xl h-[50px] rounded-5xl"
                 />
@@ -709,7 +714,7 @@
               >
               <div class="flex space-x-4">
                 <img
-                  src="./src/images/review3.jpeg"
+                  src="./images/review3.jpeg"
                   alt="user image"
                   class="w-15xl h-[50px] rounded-5xl"
                 />
@@ -734,7 +739,7 @@
               >
               <div class="flex space-x-4">
                 <img
-                  src="./src/images/review1.jpeg"
+                  src="./images/review1.jpeg"
                   alt="user image"
                   class="w-15xl h-[50px] rounded-5xl"
                 />
@@ -755,7 +760,7 @@
               >
               <div class="flex space-x-4">
                 <img
-                  src="./src/images/review4.jpeg"
+                  src="./images/review4.jpeg"
                   alt="user image"
                   class="w-15xl h-[50px] rounded-5xl"
                 />
@@ -797,14 +802,14 @@
           <div class="flex items-center pt-[2rem] gap-[15px]">
             <!-- iphone button -->
             <button
-              class="font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex items-center gap-[5px] mx-auto"
+              class="font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex items-center sm:gap-[5px] mx-auto"
             >
               <img src="../src/images/apple-icon.svg" alt="apple" class="" />
               <p>Get on i-phone</p>
             </button>
             <!-- android button -->
             <button
-              class="mx-auto font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex gap-[5px] self-center items-center"
+              class="mx-auto font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:-translate-y-3 transition ease-in duration-500 cursor-pointer flex sm:gap-[5px] self-center items-center"
             >
               <img src="../src/images/google-icon.svg" alt="android" class="" />
               <p>Get on Android</p>
@@ -991,6 +996,7 @@
     </footer>
 
     <!-- external javascript link -->
-    <script src="../src/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

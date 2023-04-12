@@ -36,7 +36,7 @@ header.active {
   position: absolute;
   content: "";
   height: 5px;
-  border-radius: 5px;
+
   background-color: #d0e2fc;
   bottom: 0;
   left: 0;
@@ -48,7 +48,6 @@ header.active {
   position: absolute;
   content: "";
   height: 6px;
-  border-radius: 100px;
   bottom: 0;
   left: 0;
   z-index: -1;
@@ -99,6 +98,13 @@ footer i:hover {
   cursor: pointer;
 }
 
+.save,
+nav > a {
+  height: 3rem;
+  display: grid;
+  place-items: center;
+}
+
 .save:hover .hoverMenu {
   display: flex;
 }
@@ -129,6 +135,9 @@ footer i:hover {
 .love {
   animation: pulse 2s ease-in infinite;
 }
+.swiper-slide {
+  /* height: 300px !important; */
+}
 
 @keyframes pulse {
   0% {
@@ -156,7 +165,7 @@ footer i:hover {
     width: 0;
   }
   to {
-    width: 6rem;
+    width: 100%;
   }
 }
 @keyframes moveIn2 {
@@ -164,7 +173,7 @@ footer i:hover {
     width: 0;
   }
   to {
-    width: 14.1rem;
+    width: 100%;
   }
 }
 
@@ -221,10 +230,5 @@ footer i:hover {
   footer ul li {
     font-weight: 500;
     font-size: 163px;
-  }
-
-  .mySwiper {
-    border: 2px solid red;
-    overflow-y: hidden;
   }
 }

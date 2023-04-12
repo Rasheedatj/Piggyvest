@@ -826,6 +826,10 @@ video {
   height: 3px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .h-\[50px\] {
   height: 50px;
 }
@@ -838,10 +842,6 @@ video {
 
 .h-\[70vh\] {
   height: 70vh;
-}
-
-.h-\[80vh\] {
-  height: 80vh;
 }
 
 .h-\[70px\] {
@@ -1298,11 +1298,6 @@ video {
   padding-bottom: 4rem;
 }
 
-.px-\[5em\] {
-  padding-left: 5em;
-  padding-right: 5em;
-}
-
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1346,10 +1341,6 @@ video {
 
 .pb-\[4rem\] {
   padding-bottom: 4rem;
-}
-
-.pb-\[11rem\] {
-  padding-bottom: 11rem;
 }
 
 .text-center {
@@ -1448,16 +1439,12 @@ video {
   line-height: 70px;
 }
 
-.leading-\[35px\] {
-  line-height: 35px;
-}
-
-.leading-\[45px\] {
-  line-height: 45px;
-}
-
 .leading-\[50px\] {
   line-height: 50px;
+}
+
+.leading-\[35px\] {
+  line-height: 35px;
 }
 
 .text-veryDarkBlue {
@@ -1603,7 +1590,6 @@ header.active {
   position: absolute;
   content: "";
   height: 5px;
-  border-radius: 5px;
   background-color: #d0e2fc;
   bottom: 0;
   left: 0;
@@ -1615,7 +1601,6 @@ header.active {
   position: absolute;
   content: "";
   height: 6px;
-  border-radius: 100px;
   bottom: 0;
   left: 0;
   z-index: -1;
@@ -1673,6 +1658,13 @@ footer i:hover {
   cursor: pointer;
 }
 
+.save,
+nav > a {
+  height: 3rem;
+  display: grid;
+  place-items: center;
+}
+
 .save:hover .hoverMenu {
   display: flex;
 }
@@ -1702,6 +1694,10 @@ footer i:hover {
 .love {
   -webkit-animation: pulse 2s ease-in infinite;
           animation: pulse 2s ease-in infinite;
+}
+
+.swiper-slide {
+  /* height: 300px !important; */
 }
 
 @-webkit-keyframes pulse {
@@ -1758,7 +1754,7 @@ footer i:hover {
   }
 
   to {
-    width: 6rem;
+    width: 100%;
   }
 }
 
@@ -1768,7 +1764,7 @@ footer i:hover {
   }
 
   to {
-    width: 6rem;
+    width: 100%;
   }
 }
 
@@ -1778,7 +1774,7 @@ footer i:hover {
   }
 
   to {
-    width: 14.1rem;
+    width: 100%;
   }
 }
 
@@ -1788,7 +1784,7 @@ footer i:hover {
   }
 
   to {
-    width: 14.1rem;
+    width: 100%;
   }
 }
 
@@ -1847,11 +1843,6 @@ footer i:hover {
   footer ul li {
     font-weight: 500;
     font-size: 163px;
-  }
-
-  .mySwiper {
-    border: 2px solid red;
-    overflow-y: hidden;
   }
 }
 
@@ -2102,10 +2093,6 @@ footer i:hover {
 
   .sm\:pt-\[15rem\] {
     padding-top: 15rem;
-  }
-
-  .sm\:text-start {
-    text-align: start;
   }
 
   .sm\:text-\[55px\] {
