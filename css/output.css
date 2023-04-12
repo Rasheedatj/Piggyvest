@@ -558,40 +558,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .fixed {
   position: fixed;
 }
@@ -623,8 +589,8 @@ video {
   left: 10%;
 }
 
-.right-\[-2\%\] {
-  right: -2%;
+.right-\[-4\%\] {
+  right: -4%;
 }
 
 .top-\[-7\%\] {
@@ -707,6 +673,10 @@ video {
   bottom: 20%;
 }
 
+.right-\[-2\%\] {
+  right: -2%;
+}
+
 .bottom-\[-12\%\] {
   bottom: -12%;
 }
@@ -729,10 +699,6 @@ video {
 
 .top-\[60\%\] {
   top: 60%;
-}
-
-.right-\[-4\%\] {
-  right: -4%;
 }
 
 .z-50 {
@@ -804,10 +770,6 @@ video {
   margin-bottom: 2.25rem;
 }
 
-.mt-\[15rem\] {
-  margin-top: 15rem;
-}
-
 .mb-\[5rem\] {
   margin-bottom: 5rem;
 }
@@ -844,10 +806,6 @@ video {
   margin-top: 4rem;
 }
 
-.mt-\[10rem\] {
-  margin-top: 10rem;
-}
-
 .inline {
   display: inline;
 }
@@ -882,32 +840,16 @@ video {
   height: 70vh;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .h-\[70px\] {
   height: 70px;
 }
 
 .h-\[2\%\] {
   height: 2%;
-}
-
-.h-\[90vh\] {
-  height: 90vh;
-}
-
-.h-\[80vh\] {
-  height: 80vh;
-}
-
-.h-\[60vh\] {
-  height: 60vh;
-}
-
-.h-\[40vh\] {
-  height: 40vh;
-}
-
-.h-\[30vh\] {
-  height: 30vh;
 }
 
 .w-\[100\%\] {
@@ -930,14 +872,6 @@ video {
   width: 15%;
 }
 
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
 .w-\[230px\] {
   width: 230px;
 }
@@ -946,8 +880,16 @@ video {
   width: 20%;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .w-\[50px\] {
   width: 50px;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-\[350px\] {
@@ -966,6 +908,18 @@ video {
   width: 100px;
 }
 
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[65\%\] {
+  width: 65%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
 .w-\[70px\] {
   width: 70px;
 }
@@ -980,18 +934,6 @@ video {
 
 .w-\[5\%\] {
   width: 5%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
-}
-
-.w-\[65\%\] {
-  width: 65%;
-}
-
-.w-\[70\%\] {
-  width: 70%;
 }
 
 .flex-1 {
@@ -1060,10 +1002,6 @@ video {
 
 .gap-\[2rem\] {
   gap: 2rem;
-}
-
-.gap-\[5rem\] {
-  gap: 5rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1360,14 +1298,14 @@ video {
   padding-bottom: 4rem;
 }
 
-.py-\[20px\] {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .px-\[5em\] {
   padding-left: 5em;
   padding-right: 5em;
+}
+
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pt-\[10rem\] {
@@ -1376,6 +1314,10 @@ video {
 
 .pt-\[3rem\] {
   padding-top: 3rem;
+}
+
+.pt-\[5rem\] {
+  padding-top: 5rem;
 }
 
 .pt-\[2rem\] {
@@ -1406,8 +1348,8 @@ video {
   padding-bottom: 4rem;
 }
 
-.pt-\[5rem\] {
-  padding-top: 5rem;
+.pb-\[11rem\] {
+  padding-bottom: 11rem;
 }
 
 .text-center {
@@ -1486,10 +1428,6 @@ video {
   font-weight: 400;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -1512,6 +1450,14 @@ video {
 
 .leading-\[35px\] {
   line-height: 35px;
+}
+
+.leading-\[45px\] {
+  line-height: 45px;
+}
+
+.leading-\[50px\] {
+  line-height: 50px;
 }
 
 .text-veryDarkBlue {
@@ -2027,8 +1973,8 @@ footer i:hover {
     height: 80px;
   }
 
-  .sm\:w-\[100\%\] {
-    width: 100%;
+  .sm\:h-\[80vh\] {
+    height: 80vh;
   }
 
   .sm\:w-\[250px\] {
@@ -2045,6 +1991,10 @@ footer i:hover {
 
   .sm\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .sm\:w-\[100\%\] {
+    width: 100%;
   }
 
   .sm\:w-\[80\%\] {
@@ -2095,6 +2045,10 @@ footer i:hover {
     gap: 5px;
   }
 
+  .sm\:gap-\[0\] {
+    gap: 0;
+  }
+
   .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -2136,8 +2090,22 @@ footer i:hover {
     padding-bottom: 1rem;
   }
 
+  .sm\:py-\[0\] {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .sm\:px-\[5em\] {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
   .sm\:pt-\[15rem\] {
     padding-top: 15rem;
+  }
+
+  .sm\:text-start {
+    text-align: start;
   }
 
   .sm\:text-\[55px\] {
@@ -2166,6 +2134,10 @@ footer i:hover {
 
   .sm\:leading-\[70px\] {
     line-height: 70px;
+  }
+
+  .sm\:leading-\[30px\] {
+    line-height: 30px;
   }
 }
 
