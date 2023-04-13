@@ -23,7 +23,7 @@ button.forEach((accept) =>
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   centeredSlides: true,
-  spaceBetween: 30,
+  spaceBetween: 20,
   direction: "vertical",
   slidesPerView: 1.7,
   speed: 1000,

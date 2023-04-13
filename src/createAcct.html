@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- external css file -->
+    <link href="../css/output.css" rel="stylesheet" />
+    <title>Create Account</title>
+  </head>
+  <body
+    class="bg-[#062863] flex flex-col gap-[4rem] justify-center items-center my-[4rem] login"
+    style="
+      background-image: url(./images/blue.png), url(./images/green.png),
+        url(./images/pink.png), url(./images/purple.png);
+    "
+  >
+    <div><img src="./images/piggyvest-logo.0b78a8fa.svg" alt="" /></div>
+    <section
+      class="bg-white p-[2rem] flex flex-col w-[90%] lg:w-[34%] rounded-r-[1.2rem] rounded-t-[1.2rem]"
+    >
+      <head>
+        <h1 class="text-[#083e9e] text-[1.5rem] font-[700] text-center">
+          Create a Secure Account
+        </h1>
+        <p class="text-[#4a5568] text-[17px] text-center">
+          Welcome to the future of Savings & Investments
+        </p>
+      </head>
+
+      <form action="" class="mt-[4rem] flex flex-col gap-[1.7rem]">
+        <div class="flex flex-col gap-[5px]">
+          <label for="name" class="text-[#4a5568] font-[700] text-[14px]"
+            >Full Name</label
+          >
+          <input
+            type="text"
+            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none"
+            placeholder="Full Name"
+          />
+        </div>
+
+        <div class="flex flex-col gap-[5px]">
+          <label for="email" class="text-[#4a5568] font-[700] text-[14px]"
+            >Email Address</label
+          >
+          <input
+            type="email"
+            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none"
+            placeholder="Email Address"
+          />
+        </div>
+
+        <div class="flex flex-col gap-[5px]">
+          <label for="tel" class="text-[#4a5568] font-[700] text-[14px]"
+            >Phone Number</label
+          >
+          <input
+            type="tel"
+            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none"
+            placeholder="Phone Number"
+          />
+        </div>
+
+        <div class="flex flex-col gap-[5px]">
+          <label for="password" class="text-[#4a5568] font-[700] text-[14px]"
+            >Password</label
+          >
+          <input
+            type="password"
+            placeholder="Password"
+            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none"
+          />
+        </div>
+
+        <div class="flex flex-col gap-[5px]">
+          <label for="name" class="text-[#4a5568] font-[700] text-[14px]"
+            >Referereer phone or promo code (optionl)</label
+          >
+          <input
+            type="text"
+            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none"
+            placeholder="Referereer phone or code"
+          />
+        </div>
+
+        <div class="flex flex-col gap-[5px] relative">
+          <label
+            for="text"
+            class="text-[#4a5568] font-[700] text-[14px] capitalize"
+            >How did you hear about us (optional)</label
+          >
+          <select
+            name="about us"
+            id="informant"
+            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none"
+          >
+            <optgroup>
+              <option value="click to select" selected>Click To Select</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Twitter">Twitter</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Friend/ Family/ Co worker Refferal">
+                Friend/ Family/ Co worker Refferal
+              </option>
+              <option value="Google Search">Google Search</option>
+              <option value="Google playstore">Google playstore</option>
+              <option value="Online Blog">Online Blog</option>
+              <option value="Local Newspaper">Local Newspaper</option>
+              <option value="Instagram">At an Event</option>
+              <option value="Instagram">Other</option>
+            </optgroup>
+          </select>
+
+          <span
+            class="material-symbols-outlined absolute right-[5px] top-[50%] text-[#cccccc] text-[1.5rem] font-[500]"
+          >
+            expand_more
+          </span>
+          <span
+            class="absolute right-[10%] top-[57%] bg-[#cccccc] h-[15px] w-[2px]"
+          ></span>
+        </div>
+
+        <input
+          type="submit"
+          value="Create Account"
+          class="capitalize text-[white] bg-[#083e9e] font-[500] text-[1.3rem] py-[1rem] rounded-r-[.5rem] rounded-t-[.5rem] mt-[2rem] cursor-pointer"
+        />
+      </form>
+    </section>
+
+    <footer>
+      <p class="text-[white]">
+        Already have an account? <a href="#"> Log in</a>
+      </p>
+    </footer>
+  </body>
+</html>
