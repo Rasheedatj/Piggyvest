@@ -136,7 +136,11 @@ nav > a {
   animation: pulse 2s ease-in infinite;
 }
 .swiper-slide {
-  /* height: 300px !important; */
+  height: auto !important;
+}
+.login {
+  background-image: url(./images/blue.png), url(./images/green.png),
+    url(./images/pink.png), url(./images/purple.png);
 }
 
 @keyframes pulse {

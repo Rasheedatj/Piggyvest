@@ -25,12 +25,14 @@ var swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   spaceBetween: 30,
   direction: "vertical",
+  slidesPerView: 1.7,
+  speed: 1000,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   autoplay: {
-    delay: 1500,
+    delay: 2500,
     disableOnInteraction: false,
   },
 });
