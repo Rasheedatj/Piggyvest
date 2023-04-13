@@ -13,11 +13,15 @@
     <title>Login</title>
   </head>
   <body
-    class="bg-[#062863] flex flex-col gap-[4rem] justify-center items-center my-[4rem] login"
+    class="bg-[#062863] flex flex-col gap-[4rem] justify-center items-center my-[4rem] login h-[100vh]"
+    style="
+      background-image: url(./images/blue.png), url(./images/green.png),
+        url(./images/pink.png), url(./images/purple.png);
+    "
   >
     <div><img src="./images/piggyvest-logo.0b78a8fa.svg" alt="" /></div>
     <section
-      class="bg-white p-[2rem] flex flex-col w-[90%] lg:w-[32%] rounded-r-[1.2rem] rounded-t-[1.2rem]"
+      class="bg-white p-[2rem] flex flex-col w-[90%] lg:w-[34%] rounded-r-[1.2rem] rounded-t-[1.2rem]"
     >
       <head>
         <h1 class="text-[#083e9e] text-[1.5rem] font-[700] text-center">
@@ -28,7 +32,7 @@
         </p>
       </head>
 
-      <form action="" class="mt-[4rem] flex flex-col gap-[1.5rem]">
+      <form action="" class="mt-[4rem] flex flex-col gap-[1.7rem]">
         <div class="flex flex-col gap-[5px]">
           <label for="Email" class="text-[#4a5568] font-[700]"
             >Email or Phone Number</label
@@ -50,9 +54,9 @@
         </div>
 
         <input
-          type="button"
+          type="submit"
           value="log in"
-          class="capitalize text-[white] bg-[#0d60d8] font-[700] text-[1rem] py-[1rem] rounded-r-[.5rem] rounded-t-[.5rem] mt-[2rem]"
+          class="capitalize text-[white] bg-[#0d60d8] font-[700] text-[1rem] py-[1rem] rounded-r-[.5rem] rounded-t-[.5rem] mt-[2rem] cursor-pointer hover:bg-[#062863] transition-all duration-150 ease-linear"
         />
       </form>
     </section>
