@@ -713,6 +713,110 @@ video {
   top: 60%;
 }
 
+.top-\[-2\%\] {
+  top: -2%;
+}
+
+.right-\[-3\%\] {
+  right: -3%;
+}
+
+.left-\[-3\%\] {
+  left: -3%;
+}
+
+.top-\[-5\%\] {
+  top: -5%;
+}
+
+.left-\[20\%\] {
+  left: 20%;
+}
+
+.left-\[25\%\] {
+  left: 25%;
+}
+
+.right-\[5\%\] {
+  right: 5%;
+}
+
+.top-\[40\%\] {
+  top: 40%;
+}
+
+.left-\[30\%\] {
+  left: 30%;
+}
+
+.bottom-\[30\%\] {
+  bottom: 30%;
+}
+
+.left-\[26\%\] {
+  left: 26%;
+}
+
+.left-\[28\%\] {
+  left: 28%;
+}
+
+.top-\[35\%\] {
+  top: 35%;
+}
+
+.left-\[38\%\] {
+  left: 38%;
+}
+
+.top-\[75\%\] {
+  top: 75%;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
+.top-\[80\%\] {
+  top: 80%;
+}
+
+.left-\[55\%\] {
+  left: 55%;
+}
+
+.top-\[0\%\] {
+  top: 0%;
+}
+
+.right-\[0\%\] {
+  right: 0%;
+}
+
+.top-\[5\%\] {
+  top: 5%;
+}
+
+.top-\[2\%\] {
+  top: 2%;
+}
+
+.right-\[2\%\] {
+  right: 2%;
+}
+
+.left-\[2\%\] {
+  left: 2%;
+}
+
+.left-\[0\%\] {
+  left: 0%;
+}
+
+.left-\[0\] {
+  left: 0;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -819,12 +923,12 @@ video {
   margin-bottom: 50px;
 }
 
-.mt-\[4rem\] {
-  margin-top: 4rem;
-}
-
 .mb-\[45px\] {
   margin-bottom: 45px;
+}
+
+.mt-\[4rem\] {
+  margin-top: 4rem;
 }
 
 .mt-\[2rem\] {
@@ -927,10 +1031,6 @@ video {
 
 .w-\[90\%\] {
   width: 90%;
-}
-
-.w-\[35\%\] {
-  width: 35%;
 }
 
 .w-\[2px\] {
@@ -1049,16 +1149,12 @@ video {
   gap: 2.25rem;
 }
 
-.gap-\[20px\] {
-  gap: 20px;
-}
-
-.gap-\[5rem\] {
-  gap: 5rem;
-}
-
 .gap-\[4rem\] {
   gap: 4rem;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
 }
 
 .gap-\[1\.7rem\] {
@@ -1067,10 +1163,6 @@ video {
 
 .gap-\[2rem\] {
   gap: 2rem;
-}
-
-.gap-\[0rem\] {
-  gap: 0rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1400,19 +1492,34 @@ video {
   padding-right: 25px;
 }
 
+.px-\[0\] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.px-\[22px\] {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.py-\[5px\] {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
-.px-\[3rem\] {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
 .py-\[\.8rem\] {
   padding-top: .8rem;
   padding-bottom: .8rem;
+}
+
+.px-\[3rem\] {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .py-\[3rem\] {
@@ -1433,21 +1540,6 @@ video {
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.px-\[0\] {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.px-\[22px\] {
-  padding-left: 22px;
-  padding-right: 22px;
-}
-
-.py-\[5px\] {
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .pt-\[10rem\] {
@@ -1928,6 +2020,12 @@ nav > a {
   background-attachment: fixed;
 }
 
+/* .about {
+  background-position: right 0 top 3%, right -7.5% top -1%, left -5% bottom -10%,
+    right -5% bottom -5%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+} */
+
 #informant {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2187,6 +2285,10 @@ nav > a {
     margin-top: 10rem;
   }
 
+  .sm\:mt-\[4rem\] {
+    margin-top: 4rem;
+  }
+
   .sm\:mt-\[15rem\] {
     margin-top: 15rem;
   }
@@ -2195,8 +2297,8 @@ nav > a {
     margin-bottom: 10rem;
   }
 
-  .sm\:mt-\[4rem\] {
-    margin-top: 4rem;
+  .sm\:block {
+    display: block;
   }
 
   .sm\:grid {
@@ -2255,12 +2357,12 @@ nav > a {
     width: 70%;
   }
 
-  .sm\:w-\[95\%\] {
-    width: 95%;
-  }
-
   .sm\:w-\[35\%\] {
     width: 35%;
+  }
+
+  .sm\:w-\[95\%\] {
+    width: 95%;
   }
 
   .sm\:grid-cols-3 {
@@ -2283,16 +2385,16 @@ nav > a {
     gap: 2.5rem;
   }
 
+  .sm\:gap-\[5rem\] {
+    gap: 5rem;
+  }
+
   .sm\:gap-\[5px\] {
     gap: 5px;
   }
 
   .sm\:gap-\[0\] {
     gap: 0;
-  }
-
-  .sm\:gap-\[5rem\] {
-    gap: 5rem;
   }
 
   .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -2399,6 +2501,10 @@ nav > a {
 
   .md\:mt-\[0\] {
     margin-top: 0;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:grid {

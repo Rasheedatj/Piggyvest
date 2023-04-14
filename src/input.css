@@ -146,6 +146,12 @@ nav > a {
   background-attachment: fixed;
 }
 
+/* .about {
+  background-position: right 0 top 3%, right -7.5% top -1%, left -5% bottom -10%,
+    right -5% bottom -5%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+} */
+
 #informant {
   -webkit-appearance: none;
   -moz-appearance: none;

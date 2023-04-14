@@ -11,6 +11,12 @@ window.onscroll = () => {
   header.classList.add("active");
 };
 
+window.addEventListener("scroll", function () {
+  if (document.documentElement.scrollTop === 0) {
+    header.classList.remove("active");
+  }
+});
+
 let cookieBox = document.querySelector(".cookie");
 let button = document.querySelectorAll(".disappear");
 
