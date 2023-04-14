@@ -2482,12 +2482,21 @@ nav > a {
     padding-bottom: 5rem;
   }
 
+  .md\:px-\[3rem\] {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .md\:pt-\[15rem\] {
     padding-top: 15rem;
   }
 
   .md\:pt-\[10rem\] {
     padding-top: 10rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 
   .md\:text-\[55px\] {
