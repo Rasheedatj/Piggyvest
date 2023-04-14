@@ -1001,6 +1001,10 @@ video {
   flex-direction: column;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -1063,6 +1067,10 @@ video {
 
 .gap-\[2rem\] {
   gap: 2rem;
+}
+
+.gap-\[0rem\] {
+  gap: 0rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1425,6 +1433,21 @@ video {
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.px-\[0\] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.px-\[22px\] {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.py-\[5px\] {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .pt-\[10rem\] {
@@ -2172,6 +2195,10 @@ nav > a {
     margin-bottom: 10rem;
   }
 
+  .sm\:mt-\[4rem\] {
+    margin-top: 4rem;
+  }
+
   .sm\:grid {
     display: grid;
   }
@@ -2232,6 +2259,10 @@ nav > a {
     width: 95%;
   }
 
+  .sm\:w-\[35\%\] {
+    width: 35%;
+  }
+
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2244,6 +2275,10 @@ nav > a {
     flex-direction: row-reverse;
   }
 
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+
   .sm\:gap-10 {
     gap: 2.5rem;
   }
@@ -2254,6 +2289,10 @@ nav > a {
 
   .sm\:gap-\[0\] {
     gap: 0;
+  }
+
+  .sm\:gap-\[5rem\] {
+    gap: 5rem;
   }
 
   .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -2309,6 +2348,10 @@ nav > a {
 
   .sm\:pt-\[15rem\] {
     padding-top: 15rem;
+  }
+
+  .sm\:text-start {
+    text-align: start;
   }
 
   .sm\:text-\[55px\] {
@@ -2550,6 +2593,10 @@ nav > a {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-\[0\] {
+    gap: 0;
   }
 
   .lg\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
