@@ -677,16 +677,20 @@ video {
   right: 2%;
 }
 
-.bottom-\[-25\%\] {
-  bottom: -25%;
+.bottom-\[25\%\] {
+  bottom: 25%;
 }
 
-.right-\[10\%\] {
-  right: 10%;
+.right-\[15\%\] {
+  right: 15%;
 }
 
 .right-\[5px\] {
   right: 5px;
+}
+
+.right-\[10\%\] {
+  right: 10%;
 }
 
 .top-\[57\%\] {
@@ -751,34 +755,6 @@ video {
 
 .top-\[60\%\] {
   top: 60%;
-}
-
-.bottom-\[-5\%\] {
-  bottom: -5%;
-}
-
-.bottom-\[0\%\] {
-  bottom: 0%;
-}
-
-.bottom-\[40\%\] {
-  bottom: 40%;
-}
-
-.bottom-\[45\%\] {
-  bottom: 45%;
-}
-
-.bottom-\[35\%\] {
-  bottom: 35%;
-}
-
-.bottom-\[25\%\] {
-  bottom: 25%;
-}
-
-.right-\[15\%\] {
-  right: 15%;
 }
 
 .z-50 {
