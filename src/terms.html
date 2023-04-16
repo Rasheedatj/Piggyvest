@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/2bfe15d79d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- external css file -->
+    <link href="../css/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="relative">
+    <!-- #### HEADER ######## -->
+    <header
+      class="p-[2rem] flex justify-between items-center top-0 bg-white fixed w-[100%] z-50 header"
+    >
+      <!-- logo -->
+      <div class="lg:w-[20%]">
+        <a href="../index.html">
+          <img src="../src/images/index-logo.svg" alt="logo"
+        /></a>
+      </div>
+
+      <!-- hamburger button -->
+      <div class="flex flex-col space-y-2 lg:hidden hamburger justify-end">
+        <span class="w-[2rem] h-[3px] bg-veryDarkBlue rounded-xl top"></span>
+        <span class="w-[2rem] h-[3px] bg-veryDarkBlue rounded-xl middle"></span>
+        <span class="w-[2rem] h-[3px] bg-veryDarkBlue rounded-xl bottom"></span>
+      </div>
+
+      <!-- #### NAV MENU ### -->
+      <nav class="hidden lg:flex lg:space-x-12">
+        <span class="save">
+          <a
+            href="#"
+            class="capitalize text-veryDarkBlue font-[500] text-[1.16rem]"
+            >save</a
+          >
+          <!-- #### HOVER MENU ##### -->
+          <section
+            class="fixed w-[30%] top-[12%] left-[10%] z-[10000] border-[1px] border-[#ececec] bg-[#fff] rounded-[10px] hidden hoverMenu flex-wrap shadow-sm"
+          >
+            <a
+              href="./piggybank.html"
+              class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] transition duration-100 cursor-pointer hover:bg-lightGray"
+            >
+              <img
+                src="./images/automated.png"
+                alt="automated"
+                class="w-[15%]"
+              />
+              <p>piggybank</p>
+            </a>
+
+            <a
+              href="./safelock.html"
+              class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] cursor-pointer hover:bg-lightGray transition duration-100"
+            >
+              <img
+                src="./images/safelock.png"
+                alt="automated"
+                class="w-[15%]"
+              />
+              <p>safelock</p>
+            </a>
+
+            <a
+              href="./target.html"
+              class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] cursor-pointer hover:bg-lightGray transition duration-100"
+            >
+              <img src="./images/target.png" alt="automated" class="w-[15%]" />
+              <p>target savings</p>
+            </a>
+
+            <a
+              href="./flex.html"
+              class="capitalize w-[50%] flex items-center space-x-3 p-[1.5rem] cursor-pointer hover:bg-lightGray transition duration-100"
+            >
+              <img src="./images/flex.png" alt="automated" class="w-[15%]" />
+              <p>flex naira</p>
+            </a>
+          </section>
+        </span>
+        <a
+          href="./invest.html"
+          class="capitalize text-veryDarkBlue font-[500] text-[1.16rem]"
+          >invest</a
+        >
+        <a
+          href="#"
+          class="capitalize text-veryDarkBlue font-[500] text-[1.16rem]"
+          >stories</a
+        >
+        <a
+          href="#"
+          class="capitalize text-veryDarkBlue font-[500] text-[1.16rem]"
+          >FAQs</a
+        >
+        <a
+          href="#"
+          class="capitalize text-veryDarkBlue font-[500] text-[1.16rem]"
+          >blog</a
+        >
+      </nav>
+
+      <!-- buttons -->
+      <div class="hidden lg:flex lg:w-[30%] lg:space-x-3 flex-1 lg:justify-end">
+        <a href="./login.html">
+          <button
+            class="capitalize text-[1.3rem] font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:text-lightBlue hover:border-lightBlue transition ease-in duration-700 cursor-pointer"
+          >
+            sign in
+          </button>
+        </a>
+        <a href="./createAcct.html">
+          <button
+            class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer"
+          >
+            Create free account
+          </button>
+        </a>
+      </div>
+    </header>
+
+    <!-- ######## HAMBURGER MENU ######### -->
+    <div
+      class="hidden flex-col items-center space-y-6 px-[1.5rem] bg-white menu pt-[10rem] fixed z-[2] inset-[0]"
+    >
+      <a href="#" class="capitalize text-veryDarkBlue font-[500] text-[1.3rem]"
+        >save</a
+      >
+      <a
+        href="./invest.html"
+        class="capitalize text-veryDarkBlue font-[500] text-[1.3rem]"
+        >invest</a
+      >
+      <a href="#" class="capitalize text-veryDarkBlue font-[500] text-[1.3rem]"
+        >stories</a
+      >
+      <a href="#" class="capitalize text-veryDarkBlue font-[500] text-[1.3rem]"
+        >FAQs</a
+      >
+      <a href="#" class="capitalize text-veryDarkBlue font-[500] text-[1.3rem]"
+        >blog</a
+      >
+
+      <div class="flex flex-col space-y-9 w-[100%] pt-[3rem] items-center">
+        <a href="./login.html">
+          <button
+            class="capitalize text-[1.3rem] font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:text-lightBlue hover:border-lightBlue transition ease-in duration-700 cursor-pointer"
+          >
+            sign in
+          </button>
+        </a>
+        <a href="./createAcct.html">
+          <button
+            class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer"
+          >
+            Create free account
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <section class="px-[2.5rem] pt-2xl sm:px-[3rem]">
+      <!-- ######## HERO SECTION ######## -->
+      <section
+        class="flex flex-col space-y-32 pt-[10rem] items-center md:pt-[15rem] lg:flex-row lg:space-y-0"
+      >
+        <div class="sm:px-[7rem] lg:w-[50%] lg:px-0 lg:pr-[7rem]">
+          <h1
+            class="capitalize text-[38px] text-veryDarkBlue font-[600] text-center md:text-[55px] lg:text-start lg:text-[65px] lg:leading-[82.42px]"
+          >
+            terms of use
+          </h1>
+
+          <p
+            class="rounded-[2px] text-[#353535] text-center py-[1rem] md:text-[19px] md:rounded-[2px] lg:text-start lg:w-[90%] leading-[35px]"
+          >
+            Please note that your use of and access to the services (as defined
+            below) are subject to the following terms; if you do not agree to
+            all of these terms, you may not use or access the services in any
+            manner.
+          </p>
+          <!-- create account button -->
+          <p class="text-lightBlue mt-[2rem] tetx-[20px]">
+            Last updated: March 2023
+          </p>
+        </div>
+
+        <!-- #### SIDE IMAGE ###### -->
+        <div class="lg:w-[50%] flex justify-center lg:justify-center">
+          <div class="relative headerimg">
+            <img
+              src="./images/terms.png"
+              alt="header image"
+              class="w-[90%] sm:w-[100%]"
+            />
+            <img
+              src="./images/stories-rect.png"
+              alt="rectangle"
+              class="absolute w-[80%] right-[-2%] top-[-7%] sm:right-[-5%] z-[-1] sm:w-[95%]"
+            />
+            <img
+              src="../src/images/sqaure.svg"
+              alt="rectangle"
+              class="absolute top-[-7%] left-[-7%]"
+            />
+
+            <img
+              src="../src/images/greeround.svg"
+              alt="rectangle"
+              class="absolute bottom-[-12%] right-[-6%]"
+            />
+            <img
+              src="../src/images/dot2.svg"
+              alt="rectangle"
+              class="absolute bottom-[10%] left-[-7%]"
+            />
+            <img
+              src="../src/images/dot2.svg"
+              alt="rectangle"
+              class="absolute top-[10%] right-[-5%]"
+            />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ###### TERMS ###### -->
+    <section class="flex flex-col gap-[2rem]">
+      <p
+        class="rounded-[2px] text-[#353535] text-center py-[1rem] md:text-[19px] md:rounded-[2px] lg:text-start lg:w-[90%] leading-[35px]"
+      >
+        These Terms of Use (these <strong>“Terms”</strong> ), together with any
+        documents expressly incorporated by reference in these Terms, represent
+        an agreement between you and PiggyTech Global Holdings Limited (
+        <strong>"PiggyVest"</strong> ) and contain the terms and conditions
+        governing your use of and access to our website at
+        <strong> https://www.piggyvest.com</strong> and all affiliated websites
+        and mobile application owned and operated by us (collectively, the
+        <strong>“Website”</strong> ) and our products, services, and
+        applications (together with the Website, the
+        <strong>“Services”</strong> ) including any content or functionality
+        offered through the Website or the Services, whether as a guest or
+        registered user.
+      </p>
+
+      <p class="text-[#353535] md:text-[20px] leading-[35px]">
+        “You” and “your” mean the person who uses or accesses the Services.
+      </p>
+
+      <p class="text-[#353535] md:text-[20px] leading-[35px]">
+        “We,” “us,” and “our” mean PiggyVest and its successors, affiliates, and
+        assignees.
+      </p>
+
+      <p class="text-[#353535] md:text-[20px] leading-[35px]">
+        “PocketApp Account” means a registered account on the website and mobile
+        application at https://pocketapp.com or any other affiliated website and
+        mobile application (collectively, “PocketApp”) operated by Abeg
+        Technologies Limited, an affiliate of PiggyVest.
+      </p>
+
+      <p class="text-[#353535] md:text-[20px] leading-[35px]">
+        As used in these Terms, “PiggyVest Account” means the account you have
+        with us for the Services.
+      </p>
+
+      <p class="text-[#353535] md:text-[20px] leading-[35px]">
+        Your use of and access to the Services are subject at all times to these
+        Terms and our Privacy Policy. Please read these Terms and our Privacy
+        Policy carefully. By using or accessing the Services, you represent that
+        you have read and understand these Terms and our Privacy Policy and you
+        agree to be bound by these Terms and our Privacy Policy. If you do not
+        agree to all the terms and conditions of these Terms and our Privacy
+        Policy, do not use or access the Services.
+      </p>
+
+      <div class="flex flex-col gap-[2rem]">
+        <h1 class="text-[51px] text-[#0c1825] font-[700]">
+          What are the requirements to use the Services?
+        </h1>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          In order to use the Services, you must: (a) accept and agree to these
+          Terms and our Privacy Policy; (b) register with us on the Website; (c)
+          be a Nigerian citizen (or a legal Nigerian resident) of at least
+          eighteen (18) years of age; (d) have a Bank Account with a Nigerian
+          financial institution; and (e) provide all information requested by
+          us, such as your name, email address, mobile device number, online
+          credentials for your Bank Account, and such other information as we
+          may request from time to time (collectively, “User Information”).
+        </p>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          Your eligibility to use this Website also depends on the country you
+          reside in. Currently, this Website operates only in Nigeria, and is
+          only available to users who have Nigerian bank accounts. You may use
+          the Services only if you agree to form a binding contract with
+          PiggyVest and are not a person barred from receiving services under
+          the laws of the applicable jurisdiction.
+        </p>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          You represent and warrant that all User Information you provide us
+          from time to time is true, accurate, current, and complete. You agree
+          not to misrepresent your identity or your User Information. You agree
+          to promptly notify us of changes to your User Information by updating
+          your PiggyVest Account on the Website; provided, however, that you
+          must notify us at least three Business Days before any changes to your
+          Bank Account information, including, but not limited to, the closure
+          of your Bank Account for any reason by calling
+          <strong>0700 933 933 933</strong> or emailing
+          <strong> contact@piggyvest.com</strong> or by updating your PiggyVest
+          Account via the Website. If we approve your registration, you will be
+          authorized to use the Services, subject to these Terms.
+        </p>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          For our compliance purposes and in order to provide the Services to
+          you, you hereby authorize us to, directly or through a third party,
+          obtain, verify, and record information and documentation that helps us
+          verify your identity and Bank Account information. When you register
+          for the Services and from time to time thereafter, we may require you
+          to provide and/or confirm information and documentation that will
+          allow us to identify you, such as: A copy of your government-issued
+          photo ID, such as a passport, national identity card or driver’s
+          license; Bank Verification Number (BVN) A copy of a utility bill, bank
+          statement, affidavit, or other bill, dated within three months of our
+          request, with your name and Nigerian street address on it; and Such
+          other information and documentation that we may require from time to
+          time.
+        </p>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          By using the Services and providing User Information to us, you
+          automatically authorize us to obtain, directly or indirectly through
+          our third-party service providers and without any time limit or the
+          requirement to pay any fees, information about you and your Bank
+          Account from the financial institution holding your Bank Account and
+          other third-party websites and databases as necessary to provide the
+          Services to you. For purposes of such authorization, you hereby grant
+          PiggyVest and our third-party service providers a limited power of
+          attorney, and you hereby appoint PiggyVest and our third-party service
+          providers as your true and lawful attorney-in-fact and agent, with the
+          full power of substitution and resubstitution, for you and in your
+          name, place, and stead, in any and all capacities, to access
+          third-party websites, servers, and documents; retrieve information;
+          and use your User Information, all as described above, with the full
+          power and authority to do and perform each and every act and thing
+          requisite and necessary to be done in connection with such activities,
+          as fully to all intents and purposes as you might or could do in
+          person.
+          <strong
+            >YOU ACKNOWLEDGE AND AGREE THAT WHEN WE OR OUR THIRD-PARTY SERVICE
+            PROVIDERS ACCESS AND RETRIEVE INFORMATION FROM SUCH THIRD-PARTY
+            WEBSITES, WE AND OUR THIRD-PARTY SERVICE PROVIDERS ARE ACTING AS
+            YOUR AGENT, AND NOT THE AGENT OF OR ON BEHALF OF THE THIRD PARTY.
+            YOU ACKNOWLEDGE AND AGREE THAT WHEN WE OR OUR THIRD PARTY SERVICE
+            PROVIDERS RECEIVE YOUR BANK ACCOUNT, DEBIT OR PAYMENT CARD AND/OR
+            OTHER SECURITY INFORMATION IN RELATION TO THE DEBITING OR CREDITING
+            YOUR BANK ACCOUNT(S), YOU HAVE AUTOMATICALLY AUTHORISED DEBITS AND
+            CREDITS FROM AND TO YOUR BANK ACCOUNT AS APPLICABLE.</strong
+          >
+          You agree that other third parties shall be entitled to rely on the
+          foregoing authorization, agency, and power of attorney granted by you.
+          You understand and agree that the Services are not endorsed or
+          sponsored by any third-party account providers accessible through the
+          Services. We make no effort to review information obtained from the
+          financial institution holding your Bank Account and other third-party
+          websites and databases for any purpose, including, but not limited to,
+          accuracy, legality, or non-infringement. As between PiggyVest and our
+          third-party service providers, PiggyVest owns your confidential User
+          Information.
+        </p>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          The information you provide us is subject to our Privacy Policy.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-[2rem]">
+        <h1 class="text-[51px] text-[#0c1825] font-[700]">
+          How do I use the Services?
+        </h1>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          The purpose of the Services is to help you save and invest with
+          minimal effort.
+        </p>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          We debit your debit card (the amount you specify, subject to
+          applicable law). You can request for your savings at any time or on
+          any of our payout days, depending on the specific product under the
+          Services. Funds may be transferred to your PiggyVest Account from any
+          available options on the Website.
+        </p>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          Your funds will remain in your PiggyVest Account until you instruct us
+          to transfer any or all of your funds from your PiggyVest Account to
+          your Bank Account or to your PocketApp Account. We will generally
+          transfer the requested funds from your PiggyVest Account to your Bank
+          Account or your PocketApp account (as requested) within two Business
+          Days of when we receive your request. It is important to know the
+          amount of available funds in your PiggyVest Account before instructing
+          us to transfer funds from your PiggyVest Account.
+        </p>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          Your savings and funds transfer activities via the Website shall be
+          subject to transaction and balance limits in accordance with
+          applicable law.
+        </p>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          If you do not have sufficient available funds in your PiggyVest
+          Account to cover the amount of the requested transfer, your request
+          for the transfer will be declined. We may also transfer funds from
+          your PiggyVest Account to your Bank Account without notice to you upon
+          the closure of your PiggyVest Account as described below and at any
+          time if required by applicable law or if we, in our sole discretion,
+          suspect the Services are being used for illicit purposes or otherwise
+          in violation of these Terms.
+        </p>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          We also have a PocketApp Funding option available for you which allows
+          the funding of your PocketApp Account from your PiggyVest Account. You
+          understand and agree that you shall also comply with the terms and
+          conditions on the PocketApp in order to use the PocketApp funding
+          option.
+        </p>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          You may not use the funds in your PiggyVest Account to make purchases,
+          withdraw cash or for any other purpose not provided on the Website.
+          You are solely responsible for determining whether the funds debited
+          from your debit card and the funds maintained in your PiggyVest
+          Account are acceptable to you. We are not responsible for any
+          third-party fees that you may be incurred as a result of using the
+          Services.
+        </p>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          PiggyVest is not a financial adviser, and the Services are not
+          intended to provide financial or investment advice. Your financial
+          situation is unique. We are not responsible for ensuring your debit
+          card and/or Bank Account has sufficient funds for your needs,
+          purposes, or transactions. We do not make any representations,
+          warranties, or guarantees of any kind that the Services are
+          appropriate for you. Before using the Services, you should consider
+          obtaining additional information and advice from a financial adviser.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-[2rem]">
+        <h1 class="text-[51px] text-[#0c1825] font-[700]">
+          How do I check the balance in my PiggyVest Account?
+        </h1>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          You may obtain information about the balance of funds in your
+          PiggyVest Account at any time by logging into your account on the
+          Website.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-[2rem]">
+        <h1 class="text-[51px] text-[#0c1825] font-[700]">
+          Will I receive interest on the funds held in my PiggyVest Account?
+        </h1>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          You will receive interest or other earnings on the funds in your
+          PiggyVest Account in accordance with the rates, timelines and other
+          terms as specified for each product on the Website.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-[2rem]">
+        <h1 class="text-[51px] text-[#0c1825] font-[700]">
+          Are there any fees for using the Services?
+        </h1>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          There are no transaction charges or monthly fees for the Services. We
+          reserve the right to charge fees for the Services in the future, at
+          our sole discretion. We will notify you before charging a fee for the
+          Services by delivering notice to you electronically, by posting such
+          fee on the Website, or by any other method permitted by applicable
+          law. If you continue using the Services after such notice, you must
+          pay all applicable fees for the Services.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-[2rem]">
+        <h1 class="text-[51px] text-[#0c1825] font-[700]">
+          What is the penalty fee or penalty charge?
+        </h1>
+
+        <p class="text-[#353535] md:text-[20px] leading-[35px]">
+          Withdrawing all or part of your savings is completely FREE of charge;
+          however, you agree that you will be charged a 2.5% penalty fee or such
+          other percentage to be determined at our discretion, and communicated
+          to you, if you withdraw your savings from the Piggybank product
+          outside any of the FREE withdrawal dates published on PiggyVest’s home
+          page and FAQ page. You also agree that you have accepted and are bound
+          by all the terms and responses published on PiggyVest’s FAQ page.
+        </p>
+      </div>
+    </section>
+
+    <!-- ##### FOOTER #### -->
+    <footer
+      class="flex flex-col space-y-6 mt-24 px-[1.5rem] pb-[2rem] lg:px-[1.5rem]"
+    >
+      <div class="grid col-span-3 gap-9 lg:flex">
+        <!-- flex item one -->
+        <div
+          class="flex flex-col col-start-1 col-end-3 space-y-9 lg:col-start-1 lg:col-end-2 lg:w-[100%]"
+        >
+          <div class="">
+            <img src="../src/images/index-logo.svg" alt="logo" />
+          </div>
+          <div
+            class="w-[50%] border-[1px] rounded-[10px] py-[13px] px-[12px] sm:w-[20%] ndpr lg:w-[60%]"
+          >
+            <img
+              src="../src/images/footer image 2.webp"
+              alt="security image 2"
+            />
+          </div>
+        </div>
+
+        <!-- flex item 2 -->
+        <div
+          class="col-start-1 col end-2 flex flex-col space-y-2 lg:col-start-2 lg:col-end-3 lg:w-[100%]"
+        >
+          <h4
+            class="text-veryDarkBlue text-[15px] font-[700] pb-[1.5rem] capitalize"
+          >
+            products
+          </h4>
+          <ul class="flex flex-col space-y-3">
+            <li
+              class="list-none capitalize text-[12.82px] hover:text-lightBlue font-[600] text-[#353535]"
+            >
+              <a href="./piggybank.html">Piggybank</a>
+            </li>
+            <li
+              class="list-none capitalize text-[12.82px] hover:text-lightBlue font-[600] text-[#353535]"
+            >
+              <a href="./invest.html">invest</a>
+            </li>
+            <li
+              class="list-none capitalize text-[12.82px] hover:text-lightBlue font-[600] text-[#353535]"
+            >
+              <a href="./safelock.html">safelock</a>
+            </li>
+            <li
+              class="list-none capitalize text-[12.82px] hover:text-lightBlue font-[600] text-[#353535]"
+            >
+              <a href="./target.html">target savings</a>
+            </li>
+            <li
+              class="list-none capitalize text-[12.82px] hover:text-lightBlue font-[600] text-[#353535]"
+            >
+              <a href="./flex.html">flex naira</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- grid item 3 -->
+        <div
+          class="col-start-2 col end-3 flex flex-col space-y-2 lg:col-start-3 lg:col-end-4 lg:w-[100%]"
+        >
+          <h4
+            class="text-veryDarkBlue text-[15px] font-[700] pb-[1rem] capitalize"
+          >
+            company
+          </h4>
+          <ul class="flex flex-col space-y-3">
+            <li
+              class="list-none capitalize text-[12.82px] hover:text-lightBlue font-[600] text-[#353535]"
+            >
+              <a href="./about.html">about</a>
+            </li>
+            <li
+              class="list-none capitalize text-[12.82px] hover:text-lightBlue font-[600] text-[#353535]"
+            >
+              <a href="">FAQs</a>
+            </li>
+            <li
+              class="list-none capitalize text-[12.82px] hover:text-lightBlue font-[600] text-[#353535]"
+            >
+              <a href="">blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- grid item 4-->
+        <div
+          class="flex flex-col space-y-2 col-start-1 col-end-3 lg:col-start-4 lg:col-end-5 lg:w-[100%]"
+        >
+          <h4
+            class="text-veryDarkBlue text-[15px] font-[700] pb-[1rem] capitalize"
+          >
+            legal
+          </h4>
+          <ul class="flex flex-col space-y-3">
+            <li
+              class="list-none capitalize text-[12.82px] hover:text-lightBlue font-[600] text-[#353535]"
+            >
+              <a href="">terms</a>
+            </li>
+            <li
+              class="list-none capitalize text-[12.82px] hover:text-lightBlue font-[600] text-[#353535]"
+            >
+              <a href="">privacy</a>
+            </li>
+            <li
+              class="list-none capitalize text-[12.82px] hover:text-lightBlue font-[600] text-[#353535]"
+            >
+              <a href="">security</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- grid item 5 -->
+        <div
+          class="flex flex-col space-y-3 col-start-1 col-end-3 lg:col-start-5 lg:col-end-6 lg:w-[100%]"
+        >
+          <div class="flex space-x-3 lg:justify-end">
+            <i class="fab fa-facebook-square fa-2x icon"></i>
+            <i class="fab fa-twitter-square fa-2x icon"></i>
+            <i class="fab fa-instagram-square fa-2x icon"></i>
+          </div>
+          <p class="text-veryDarkBlue text-[12.82px] lg:text-end">
+            Tesmot house, Abdulrahman Okene close, Victoria Island, Lagos,
+            Nigeria.
+          </p>
+          <p class="text-veryDarkBlue text-[12.82px] lg:text-end">
+            contact@piggyvest.com
+          </p>
+          <p class="text-veryDarkBlue text-[12.82px] lg:text-end">
+            +234 700 933 933 933
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-[2rem] lg:w-[60%] lg:self-center">
+        <p class="text-veryDarkBlue text-[12.82px] text-center rounded-[2px]">
+          Piggyvest (formerly piggybank.ng) is the leading online savings &
+          investing platform in Nigeria. For over 6 years, our customers have
+          saved and invested billions of Naira that they would normally be
+          tempted to spend.
+        </p>
+
+        <p class="text-lightBlue text-[12.82px] text-center pt-[1.5rem]">
+          2016 - 2022 PiggyTech Global Limited - RC 1405222
+        </p>
+      </div>
+    </footer>
+
+    <!-- external javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
