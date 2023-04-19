@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 body {
-  font-family: "Karla";
+  font-family: 'Karla';
   font-family: DM Sans, sans-serif !important;
+  /* scroll-behavior: smooth; */
 }
 button {
   outline: none;
@@ -34,7 +35,7 @@ header.active {
 
 .learn::after {
   position: absolute;
-  content: "";
+  content: '';
   height: 5px;
 
   background-color: #d0e2fc;
@@ -46,7 +47,7 @@ header.active {
 
 .learn2::after {
   position: absolute;
-  content: "";
+  content: '';
   height: 6px;
   bottom: 0;
   left: 0;
@@ -72,7 +73,7 @@ header.active {
 
 .investImg::after {
   position: absolute;
-  content: "";
+  content: '';
   background-image: url(../src/images/investRound.svg);
   background-repeat: no-repeat;
   z-index: -1;
@@ -83,7 +84,7 @@ header.active {
 }
 .investImg::before {
   position: absolute;
-  content: "";
+  content: '';
   background-image: url(../src/images/investDot.svg);
   background-repeat: no-repeat;
   width: 100%;
@@ -110,9 +111,9 @@ nav > a {
 }
 
 .headerimg::after {
-  content: "";
+  content: '';
   position: absolute;
-  content: "";
+  content: '';
   top: -40%;
   right: -30%;
   width: 300px;

@@ -145,39 +145,41 @@
 
     <!-- ######## HAMBURGER MENU ######### -->
     <div
-      class="hidden flex-col items-center space-y-6 px-[1.5rem] bg-white menu pt-[10rem] fixed z-[2] inset-[0]"
+      class="hidden flex-col items-center gap-[2.5rem] ] px-[1.5rem] bg-white menu pt-[10rem] fixed z-[2] inset-[0]"
     >
-      <a href="#" class="capitalize text-veryDarkBlue font-[500] text-[1.3rem]"
+      <a
+        href="/#save"
+        class="capitalize text-veryDarkBlue font-[600] text-[1rem]"
         >save</a
       >
       <a
         href="./src/invest.html"
-        class="capitalize text-veryDarkBlue font-[500] text-[1.3rem]"
+        class="capitalize text-veryDarkBlue font-[600] text-[1rem]"
         >invest</a
       >
       <a
         href="./src/stories.html"
-        class="capitalize text-veryDarkBlue font-[500] text-[1.3rem]"
+        class="capitalize text-veryDarkBlue font-[600] text-[1rem]"
         >stories</a
       >
-      <a href="#" class="capitalize text-veryDarkBlue font-[500] text-[1.3rem]"
+      <a href="#" class="capitalize text-veryDarkBlue font-[600] text-[1rem]"
         >FAQs</a
       >
-      <a href="#" class="capitalize text-veryDarkBlue font-[500] text-[1.3rem]"
+      <a href="#" class="capitalize text-veryDarkBlue font-[600] text-[1rem]"
         >blog</a
       >
 
       <div class="flex flex-col space-y-9 w-[100%] pt-[3rem] items-center">
-        <a href="./src/login.html">
+        <a href="./src/login.html" class="w-[90%]">
           <button
-            class="capitalize text-[1.3rem] font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:text-lightBlue hover:border-lightBlue transition ease-in duration-700 cursor-pointer"
+            class="capitalize text-[1.3rem] font-[500] border-[1px] rounded-[10px] py-[13px] px-[12px] hover:text-lightBlue hover:border-lightBlue transition ease-in duration-700 cursor-pointer w-[100%]"
           >
             sign in
           </button>
         </a>
-        <a href="./src/createAcct.html">
+        <a href="./src/createAcct.html" class="w-[90%]">
           <button
-            class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer"
+            class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer w-[100%]"
           >
             Create free account
           </button>
@@ -307,6 +309,7 @@
       <!-- #### SAVING VARIETIES #### -->
       <section
         class="flex flex-col space-y-12 my-[5rem] sm:grid sm:col-span-3 sm:gap-10 sm:space-y-0"
+        id="save"
       >
         <div
           class="flex flex-col space-y-6 items-center sm:col-start-1 sm:col-end-3 lg:col-start-1 lg:col-end-2 lg:items-start lg:justify-center"
@@ -321,11 +324,13 @@
           >
             Earn 5%-15% when you save with any of these PiggyVest plans.
           </p>
-          <button
-            class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer mt-9"
-          >
-            start saving
-          </button>
+          <a href="./src/createAcct.html">
+            <button
+              class="text-white bg-veryDarkBlue font-[500] text-[1.3rem] rounded-[15px] py-[15px] px-[20px] hover:bg-lightBlue hover:text-white transition ease-in-out duration-700 cursor-pointer mt-9"
+            >
+              start saving
+            </button>
+          </a>
         </div>
 
         <!-- automated savings -->
