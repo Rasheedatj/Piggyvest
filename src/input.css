@@ -124,8 +124,22 @@ nav > a {
 }
 
 .cookie {
-  transform: translateY(0);
+  /* transform: translateY(0); */
   transition: transform 800ms ease;
+  display: none;
+  animation: cookieSlide 1000ms ease-in-out;
+}
+
+@keyframes cookieSlide {
+  0% {
+    transform: translateX(100%);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 .cookie.slideout {
@@ -221,9 +235,9 @@ nav > a {
   .ndpr {
     width: 30%;
   }
-  .cookie {
+  /* .cookie {
     width: 90%;
-  }
+  } */
 
   .headerimg::after {
     display: none;
