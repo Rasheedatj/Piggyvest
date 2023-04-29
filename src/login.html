@@ -32,14 +32,14 @@
         </p>
       </head>
 
-      <form action="" class="mt-[4rem] flex flex-col gap-[1.7rem]">
+      <form action="" class="mt-[4rem] flex flex-col gap-[1.7rem] loginForm">
         <div class="flex flex-col gap-[5px]">
           <label for="Email" class="text-[#4a5568] font-[700]"
             >Email or Phone Number</label
           >
           <input
             type="email"
-            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none"
+            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none form-control"
           />
         </div>
 
@@ -49,15 +49,15 @@
           >
           <input
             type="password"
-            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none"
+            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none form-control"
           />
         </div>
 
-        <input
-          type="submit"
-          value="log in"
-          class="capitalize text-[white] bg-[#0d60d8] font-[700] text-[1rem] py-[1rem] rounded-r-[.5rem] rounded-t-[.5rem] mt-[2rem] cursor-pointer hover:bg-[#062863] transition-all duration-150 ease-linear"
-        />
+        <button
+          class="capitalize text-[white] bg-[#0d60d8] font-[700] text-[1rem] py-[1rem] rounded-r-[.5rem] rounded-t-[.5rem] mt-[2rem] cursor-pointer hover:bg-[#062863] transition-all duration-150 ease-linear login-btn"
+        >
+          log in
+        </button>
       </form>
     </section>
 
@@ -69,5 +69,47 @@
         <a href="" class="text-[white] text-center">Forgot password?</a>
       </p>
     </footer>
+
+    <!-- error message -->
+    <div
+      class="hidden px-[10px] py-[20px] rounded-[5px] text-[white] fixed items-center gap-[7px] bg-[#2894f4] top-[3%] right-[2%] error"
+    >
+      <img src="" alt="" />
+      <p>Please, comepletely fill out the form</p>
+      <img
+        src="../src/images/outline_close_white_24dp.png"
+        alt=""
+        class="w-[25px] cursor-pointer close"
+      />
+    </div>
+
+    <script>
+      // login form validation
+      const loginBtn = document.querySelector('.login-btn');
+      const input = document.querySelectorAll(' .form-control');
+      const errorBox = document.querySelector('.error');
+      const close = document.querySelector('.close');
+
+      const errorMessage = (e) => {
+        input.forEach((form) => {
+          if (form.value.length < 1) {
+            e.preventDefault();
+            errorBox.style.display = 'flex';
+          }
+        });
+      };
+
+      loginBtn.addEventListener('click', errorMessage);
+
+      // remove error message
+      close.addEventListener('click', () => {
+        errorBox.style.display = 'none';
+      });
+
+      // setTimeout(
+      //   () => loginBtn.removeEventListener('click', errorMessage),
+      //   5000
+      // );
+    </script>
   </body>
 </html>

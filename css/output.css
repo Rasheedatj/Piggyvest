@@ -761,6 +761,14 @@ video {
   bottom: 0px;
 }
 
+.top-\[8\%\] {
+  top: 8%;
+}
+
+.top-\[3\%\] {
+  top: 3%;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -1029,6 +1037,18 @@ video {
   width: 5%;
 }
 
+.w-\[10px\] {
+  width: 10px;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[25px\] {
+  width: 25px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1115,6 +1135,10 @@ video {
 
 .gap-\[2rem\] {
   gap: 2rem;
+}
+
+.gap-\[7px\] {
+  gap: 7px;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1213,6 +1237,14 @@ video {
 
 .rounded-\[50\%\] {
   border-radius: 50%;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-\[5px\] {
+  border-radius: 5px;
 }
 
 .rounded-r-\[1\.2rem\] {
@@ -1377,6 +1409,16 @@ video {
   background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
 
+.bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2894f4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 148 244 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1392,6 +1434,10 @@ video {
 
 .p-\[1rem\] {
   padding: 1rem;
+}
+
+.p-\[10px\] {
+  padding: 10px;
 }
 
 .py-\[13px\] {
@@ -1497,6 +1543,11 @@ video {
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .pt-\[10rem\] {
