@@ -45,7 +45,7 @@
           >
           <input
             type="text"
-            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none"
+            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none form-control"
             placeholder="Full Name"
           />
         </div>
@@ -56,7 +56,7 @@
           >
           <input
             type="email"
-            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none"
+            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none form-control"
             placeholder="Email Address"
           />
         </div>
@@ -67,7 +67,7 @@
           >
           <input
             type="tel"
-            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none"
+            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none form-control"
             placeholder="Phone Number"
           />
         </div>
@@ -79,7 +79,7 @@
           <input
             type="password"
             placeholder="Password"
-            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none"
+            class="bg-[#e2e8f0] py-[.8rem] rounded-[4px] px-[1rem] text-[#1a202c] outline-none form-control"
           />
         </div>
 
@@ -132,11 +132,11 @@
           ></span>
         </div>
 
-        <input
-          type="submit"
-          value="Create Account"
-          class="capitalize text-[white] bg-[#083e9e] font-[500] text-[1.3rem] py-[1rem] rounded-r-[.5rem] rounded-t-[.5rem] mt-[2rem] cursor-pointer"
-        />
+        <button
+          class="capitalize text-[white] bg-[#083e9e] font-[500] text-[1.3rem] py-[1rem] rounded-r-[.5rem] rounded-t-[.5rem] mt-[2rem] cursor-pointer create-acct-btn"
+        >
+          create an account
+        </button>
       </form>
     </section>
 
@@ -145,5 +145,47 @@
         Already have an account? <a href="#"> Log in</a>
       </p>
     </footer>
+
+    <!-- error message -->
+    <div
+      class="hidden px-[10px] py-[20px] rounded-[5px] text-[white] fixed items-center gap-[7px] bg-[#2894f4] top-[3%] right-[2%] error"
+    >
+      <img src="" alt="" />
+      <p>Please, comepletely fill out the form</p>
+      <img
+        src="../src/images/outline_close_white_24dp.png"
+        alt=""
+        class="w-[25px] cursor-pointer close"
+      />
+    </div>
+
+    <script>
+      // login form validation
+      const createAcctBtn = document.querySelector('.create-acct-btn');
+      const input = document.querySelectorAll(' .form-control');
+      const errorBox = document.querySelector('.error');
+      const close = document.querySelector('.close');
+
+      const errorMessage = (e) => {
+        input.forEach((form) => {
+          if (form.value.length < 1) {
+            e.preventDefault();
+            errorBox.style.display = 'flex';
+          }
+        });
+      };
+
+      createAcctBtn.addEventListener('click', errorMessage);
+
+      // remove error message
+      close.addEventListener('click', () => {
+        errorBox.style.display = 'none';
+      });
+
+      // setTimeout(
+      //   () => createAcctBtn.removeEventListener('click', errorMessage),
+      //   5000
+      // );
+    </script>
   </body>
 </html>
