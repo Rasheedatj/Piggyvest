@@ -133,7 +133,7 @@
         </div>
 
         <button
-          class="capitalize text-[white] bg-[#083e9e] font-[500] text-[1.3rem] py-[1rem] rounded-r-[.5rem] rounded-t-[.5rem] mt-[2rem] cursor-pointer create-acct-btn"
+          class="capitalize text-[white] bg-[#083e9e] font-[500] text-[1.3rem] py-[1rem] rounded-r-[.5rem] rounded-t-[.5rem] mt-[2rem] cursor-pointer event-btn"
         >
           create an account
         </button>
@@ -142,7 +142,7 @@
 
     <footer>
       <p class="text-[white]">
-        Already have an account? <a href="#"> Log in</a>
+        Already have an account? <a href="./login.html"> Log in</a>
       </p>
     </footer>
 
@@ -159,33 +159,6 @@
       />
     </div>
 
-    <script>
-      // login form validation
-      const createAcctBtn = document.querySelector('.create-acct-btn');
-      const input = document.querySelectorAll(' .form-control');
-      const errorBox = document.querySelector('.error');
-      const close = document.querySelector('.close');
-
-      const errorMessage = (e) => {
-        input.forEach((form) => {
-          if (form.value.length < 1) {
-            e.preventDefault();
-            errorBox.style.display = 'flex';
-          }
-        });
-      };
-
-      createAcctBtn.addEventListener('click', errorMessage);
-
-      // remove error message
-      close.addEventListener('click', () => {
-        errorBox.style.display = 'none';
-      });
-
-      // setTimeout(
-      //   () => createAcctBtn.removeEventListener('click', errorMessage),
-      //   5000
-      // );
-    </script>
+    <script src="./validate.js"></script>
   </body>
 </html>

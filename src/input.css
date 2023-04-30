@@ -130,6 +130,10 @@ nav > a {
   animation: cookieSlide 1000ms ease-in-out;
 }
 
+.error {
+  animation: cookieSlide 750ms ease-in-out;
+}
+
 @keyframes cookieSlide {
   0% {
     transform: translateX(100%);

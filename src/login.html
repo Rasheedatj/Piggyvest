@@ -54,7 +54,7 @@
         </div>
 
         <button
-          class="capitalize text-[white] bg-[#0d60d8] font-[700] text-[1rem] py-[1rem] rounded-r-[.5rem] rounded-t-[.5rem] mt-[2rem] cursor-pointer hover:bg-[#062863] transition-all duration-150 ease-linear login-btn"
+          class="capitalize text-[white] bg-[#0d60d8] font-[700] text-[1rem] py-[1rem] rounded-r-[.5rem] rounded-t-[.5rem] mt-[2rem] cursor-pointer hover:bg-[#062863] transition-all duration-150 ease-linear event-btn"
         >
           log in
         </button>
@@ -63,7 +63,7 @@
 
     <footer>
       <p class="text-[white]">
-        Don't have an account yet? <a href="#">Register</a>
+        Don't have an account yet? <a href="./createAcct.html">Register</a>
       </p>
       <p class="text-center pt-[10px]">
         <a href="" class="text-[white] text-center">Forgot password?</a>
@@ -83,33 +83,6 @@
       />
     </div>
 
-    <script>
-      // login form validation
-      const loginBtn = document.querySelector('.login-btn');
-      const input = document.querySelectorAll(' .form-control');
-      const errorBox = document.querySelector('.error');
-      const close = document.querySelector('.close');
-
-      const errorMessage = (e) => {
-        input.forEach((form) => {
-          if (form.value.length < 1) {
-            e.preventDefault();
-            errorBox.style.display = 'flex';
-          }
-        });
-      };
-
-      loginBtn.addEventListener('click', errorMessage);
-
-      // remove error message
-      close.addEventListener('click', () => {
-        errorBox.style.display = 'none';
-      });
-
-      // setTimeout(
-      //   () => loginBtn.removeEventListener('click', errorMessage),
-      //   5000
-      // );
-    </script>
+    <script src="./validate.js"></script>
   </body>
 </html>
