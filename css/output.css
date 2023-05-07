@@ -1977,8 +1977,8 @@ nav > a {
   /* transform: translateY(0); */
   transition: transform 800ms ease;
   display: none;
-  -webkit-animation: cookieSlide 1000ms ease-in-out;
-          animation: cookieSlide 1000ms ease-in-out;
+  -webkit-animation: cookieSlide 2000ms ease-in-out;
+          animation: cookieSlide 2000ms ease-in-out;
 }
 
 .error {
